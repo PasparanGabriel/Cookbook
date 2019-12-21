@@ -1,0 +1,13 @@
+.containerCentral {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 20rem;
+}
+
+@media screen and (max-width: 480px) {
+  .containerCentral {
+    width: 15rem;
+  }
+}

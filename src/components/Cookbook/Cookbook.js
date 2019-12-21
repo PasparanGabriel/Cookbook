@@ -9,7 +9,7 @@ import './Cookbook.css'
 const Cookbook = () => {
   return (
     <Router history={createBrowserHistory()}>
-      <div className='container'>
+      <div className='containerNav'>
         <nav className='nav'>
           <Link to='/' className='cookbook item'>Cookbook</Link>
           <Link to='/sign-up' className='position signup'>Sign Up</Link>
