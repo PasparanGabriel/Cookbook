@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Route, Router, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
+import { Button } from '../../ui/Button'
 import { Home } from '../Home'
 import { SignIn } from '../SignIn'
 import { SignUp } from '../SignUp'
@@ -12,8 +13,7 @@ const Cookbook = () => {
       <div className='containerNav'>
         <nav className='nav'>
           <Link to='/' className='cookbook item'>Cookbook</Link>
-          <Link to='/sign-up' className='position signup'>Sign Up</Link>
-          <Link to='/sign-in' className='item position signin'>Sign In</Link>
+          <Button type='info' position='right' onClick={() => alert('Sign out')}>Sign Out</Button>
         </nav>
       </div>
 
