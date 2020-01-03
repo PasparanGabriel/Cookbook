@@ -3,8 +3,8 @@ import { Link, Route, Router, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { Button } from '../../ui/Button'
 import { Home } from '../Home'
-import { SignIn } from '../SignIn'
-import { SignUp } from '../SignUp'
+import { SignIn } from '../Auth/SignIn'
+import { SignUp } from '../Auth/SignUp'
 import './Cookbook.css'
 
 const Cookbook = () => {

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
-import { ContainerCentral } from '../../utils/ContainerCentral'
-import { Button } from '../../ui/Button'
-import { Input } from '../../ui/Input'
+import { ContainerCentral } from '../../../utils/ContainerCentral'
+import { Button } from '../../../ui/Button'
+import { Input } from '../../../ui/Input'
 import './SignUp.css'
 
 class SignUp extends PureComponent {
@@ -40,7 +40,7 @@ class SignUp extends PureComponent {
     
     const { user } = this.state
         
-    if (user.firstName && user.lastName && user.email && user.password) {
+    if (user.firstName && user.lastName && user.email && user.password && user.confirmPassword) {
       console.log(user)
     } else {
       this.setState({ inputValidation: false })
