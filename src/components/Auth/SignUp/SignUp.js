@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Redirect } from 'react-router-dom'
 import { ContainerCentral } from '../../../utils/ContainerCentral'
 import { Button } from '../../../ui/Button'
 import { Input } from '../../../ui/Input'
@@ -13,14 +14,14 @@ class SignUp extends PureComponent {
         firstName: '',
         lastName: '',
         email: '',
-        password: '',
-        confirmPassword: ''
+        password: ''
       },
       inputValidation: true
     }
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.redirectSignIn = this.redirectSignIn.bind(this)
   }
 
   handleChange(event) {
@@ -40,19 +41,27 @@ class SignUp extends PureComponent {
     
     const { user } = this.state
         
-    if (user.firstName && user.lastName && user.email && user.password && user.confirmPassword) {
-      console.log(user)
+    if (user.firstName && user.lastName && user.email && user.password) {
+      this.props.signUp(user)
     } else {
       this.setState({ inputValidation: false })
     }
   }
 
+  redirectSignIn() {
+    this.props.history.push('/sign-in')
+  }
+
   render() {
     const { user, inputValidation } = this.state
+    const { auth, authError } = this.props
+
+    if (auth.uid) return <Redirect to='/' /> 
 
     return (
       <ContainerCentral>
         <h1 className='textSignUp'>Sign Up</h1>
+        { authError && <h1 className='signUpFailed'>{authError}</h1> }
 
         <form>
           <Input
@@ -95,18 +104,14 @@ class SignUp extends PureComponent {
             {!inputValidation && !user.password}
           </Input>
 
-          <Input
-            type='password'
-            name='confirmPassword'
-            value={user.confirmPassword}
-            placeholder='Confirm password'
-            onChange={this.handleChange}
-          >
-            {!inputValidation && !user.confirmPassword}
-          </Input>
-          
           <Button type='info' size='xLarge' onClick={this.handleSubmit}>Sign Up</Button>
         </form>
+
+        <div className='orContainerSignUp'>
+          <span className='orSignUp'>OR</span>
+        </div>
+
+        <Button type='info' size='xLarge' onClick={this.redirectSignIn}>Sign in</Button>
       </ContainerCentral>
     )
   }

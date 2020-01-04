@@ -1,1 +1,1 @@
-export { SignUp } from './SignUp'
+export { SignUpContainer as SignUp } from './SignUpContainer'
