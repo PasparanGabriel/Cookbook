@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cookbook/static/css/main.1cc60148.chunk.css",
-    "main.js": "/cookbook/static/js/main.870d9fe2.chunk.js",
-    "main.js.map": "/cookbook/static/js/main.870d9fe2.chunk.js.map",
+    "main.js": "/cookbook/static/js/main.f4e748c6.chunk.js",
+    "main.js.map": "/cookbook/static/js/main.f4e748c6.chunk.js.map",
     "runtime-main.js": "/cookbook/static/js/runtime-main.3b257241.js",
     "runtime-main.js.map": "/cookbook/static/js/runtime-main.3b257241.js.map",
     "static/js/2.3e04977c.chunk.js": "/cookbook/static/js/2.3e04977c.chunk.js",
     "static/js/2.3e04977c.chunk.js.map": "/cookbook/static/js/2.3e04977c.chunk.js.map",
     "index.html": "/cookbook/index.html",
-    "precache-manifest.8e98d7674609e3150a8ac320394fd850.js": "/cookbook/precache-manifest.8e98d7674609e3150a8ac320394fd850.js",
+    "precache-manifest.6f86bfaa003093ba985995c761358928.js": "/cookbook/precache-manifest.6f86bfaa003093ba985995c761358928.js",
     "service-worker.js": "/cookbook/service-worker.js",
     "static/css/main.1cc60148.chunk.css.map": "/cookbook/static/css/main.1cc60148.chunk.css.map",
     "static/js/2.3e04977c.chunk.js.LICENSE": "/cookbook/static/js/2.3e04977c.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3b257241.js",
     "static/js/2.3e04977c.chunk.js",
     "static/css/main.1cc60148.chunk.css",
-    "static/js/main.870d9fe2.chunk.js"
+    "static/js/main.f4e748c6.chunk.js"
   ]
 }
