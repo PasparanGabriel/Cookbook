@@ -1,5 +1,7 @@
 import React from 'react'
 import './Input.css'
+import hide from '../../image/hide.png'
+import view from '../../image/view.png'
 
 const Input = (props) => {
   let className, label
@@ -11,13 +13,40 @@ const Input = (props) => {
       <label className={label}>{props.placeholder}</label>
       <input
         className={className}
-        onChange={props.onChange}
+        id={props.name}
         name={props.name}
+        onChange={props.onChange}
         placeholder={props.placeholder}
         type={props.type}
         value={props.value}
       />
+      {props.name === 'password' && <ViewPassword />}
     </div>
+  )
+}
+
+const ChangeType = () => {
+  const name = document.getElementById('password')
+  const img = document.getElementById('imgPassword')
+
+  if (name.type === 'password') {
+    return (
+      img.src = hide,
+      img.alt = 'hide',
+      name.type = 'text'
+    )
+  } else {
+    return (
+      img.src = view,
+      img.alt = 'view',
+      name.type = 'password'
+    )
+  }
+}
+
+const ViewPassword = () => {
+  return (
+    <span className='viewPassword' onClick={ChangeType}><img src={view} alt='view' id='imgPassword' /></span>
   )
 }
 

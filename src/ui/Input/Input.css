@@ -35,3 +35,9 @@
   background-color: white;
   padding: 0 20px;
 }
+
+.viewPassword {
+  background-color: white;
+  margin: 0.4rem -2rem;
+  position: absolute;
+}
