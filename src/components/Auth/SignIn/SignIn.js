@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Redirect } from 'react-router-dom'
 import { ContainerCentral } from '../../../utils/ContainerCentral'
 import { Button } from '../../../ui/Button'
 import { Input } from '../../../ui/Input'
@@ -18,6 +19,7 @@ class SignIn extends PureComponent {
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.redirectSignUp = this.redirectSignUp.bind(this)
   }
 
   handleChange(event) {
@@ -37,19 +39,29 @@ class SignIn extends PureComponent {
     
     const { user } = this.state
         
-    if (user.email && user.password ) {
-      console.log(user)
+    if (user.email && user.password) {
+      this.props.signIn(user)
     } else {
       this.setState({ inputValidation: false })
     }
   }
 
+  redirectSignUp() {
+    this.props.history.push('/sign-up')
+  }
+
   render() {
     const { user, inputValidation } = this.state
+    const { auth, authError } = this.props
+
+    if (auth.uid) return <Redirect to='/' />
 
     return (
       <ContainerCentral>
-        <h1 className='textSignIn'>Sign In</h1>
+        { authError ?
+          <h1 className='textSignIn SignInFailed'>{authError}</h1> :
+          <h1 className='textSignIn'>Sign In</h1>
+        }
 
         <form>        
           <Input
@@ -74,6 +86,12 @@ class SignIn extends PureComponent {
 
           <Button type='info' size='xLarge' onClick={this.handleSubmit}>Sign in</Button>
         </form>
+
+        <div className='orContainerSignIn'>
+          <span className='orSignIn'>OR</span>
+        </div>
+
+        <Button type='info' size='xLarge' onClick={this.redirectSignUp}>Sign up</Button>
       </ContainerCentral>
     )
   }

@@ -1,1 +1,1 @@
-export { SignIn } from './SignIn'
+export { SignInContainer as SignIn } from './SignInContainer'

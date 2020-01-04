@@ -1,3 +1,22 @@
+.orSignIn {
+  background: white;
+  left: 50%;
+  width: 3rem;
+  margin: -0.75rem 0 0 -1.5rem;
+  text-align: center;
+  position: absolute;
+}
+
+.orContainerSignIn {
+  border: 0.075rem solid black;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
 .textSignIn {
   font-size: 1.5rem;
+}
+
+.SignInFailed {
+  color: red;
 }
