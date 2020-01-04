@@ -5,7 +5,7 @@ import { signUp } from '../../../store/actions/authActions'
 const mapStateToProps = (state) => {
   return {
     auth: state.firebase.auth,
-    authError: state.auth.authError
+    authErrorSignUp: state.auth.authErrorSignUp
   }
 }
 
