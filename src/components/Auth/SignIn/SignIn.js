@@ -52,16 +52,14 @@ class SignIn extends PureComponent {
 
   render() {
     const { user, inputValidation } = this.state
-    const { auth, authError } = this.props
+    const { auth, authErrorSignIn } = this.props
 
     if (auth.uid) return <Redirect to='/' />
 
     return (
       <ContainerCentral>
-        { authError ?
-          <h1 className='textSignIn SignInFailed'>{authError}</h1> :
-          <h1 className='textSignIn'>Sign In</h1>
-        }
+        <h1 className='textSignIn'>Sign In</h1>
+        { authErrorSignIn && <h1 className='signInFailed'>{authErrorSignIn}</h1> }
 
         <form>        
           <Input

@@ -1,4 +1,5 @@
 const initState = {
+  authErrorSignIn: null,
   authError: null
 }
 
@@ -7,13 +8,13 @@ const authReducer = (state = initState, action) => {
     case 'SIGNIN_ERROR':
       return {
         ...state,
-        authError: 'Sign in failed!'
+        authErrorSignIn: action.err.message
       }
 
     case 'SIGNIN_SUCCESS':
       return {
         ...state,
-        authError: null
+        authErrorSignIn: null
       }
 
     case 'SIGNOUT_SUCCESS':
