@@ -6,23 +6,15 @@ import { Input } from '../../../ui/Input'
 import './SignIn.css'
 
 class SignIn extends PureComponent {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      user: {
-        email: '',
-        password: ''
-      },
-      inputValidation: true
-    }
-
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.redirectSignUp = this.redirectSignUp.bind(this)
+  state = {
+    user: {
+      email: '',
+      password: ''
+    },
+    inputValidation: true
   }
 
-  handleChange(event) {
+  handleChange = event => {
     const { name, value } = event.target
     const { user } = this.state
 
@@ -34,7 +26,7 @@ class SignIn extends PureComponent {
     })
   }
 
-  handleSubmit(event) {
+  handleSubmit = event => {
     event.preventDefault()
     
     const { user } = this.state
@@ -46,7 +38,7 @@ class SignIn extends PureComponent {
     }
   }
 
-  redirectSignUp() {
+  redirectSignUp = () => {
     this.props.history.push('/sign-up')
   }
 
@@ -54,7 +46,8 @@ class SignIn extends PureComponent {
     const { user, inputValidation } = this.state
     const { auth, authErrorSignIn } = this.props
 
-    if (auth.uid) return <Redirect to='/' />
+    if (auth.uid)
+      return <Redirect to='/' />
 
     return (
       <ContainerCentral>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { SignOut } from '../Auth/SignOut'
 import './Navbar.css'
 
-const Navbar = (props) => {
+const Navbar = props => {
   const { auth } = props
 
   return (

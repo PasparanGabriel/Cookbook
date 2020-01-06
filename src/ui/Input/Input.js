@@ -3,16 +3,17 @@ import './Input.css'
 import hide from '../../image/hide.png'
 import view from '../../image/view.png'
 
-const Input = (props) => {
-  let className, label
-  className = props.children ? 'input wrongValue' : 'input'
+const Input = props => {
+  let input = 'input', label
+  
+  input += props.children ? ' wrongValue' : ''
   label = (props.value !== '') ? 'label' : 'labelOff'
 
   return (
     <div className='group'>
       <label className={label}>{props.placeholder}</label>
       <input
-        className={className}
+        className={input}
         id={props.name}
         name={props.name}
         onChange={props.onChange}
@@ -44,10 +45,8 @@ const ChangeType = () => {
   }
 }
 
-const ViewPassword = () => {
-  return (
-    <span className='viewPassword' onClick={ChangeType}><img src={view} alt='view' id='imgPassword' /></span>
-  )
-}
+const ViewPassword = () => (
+  <span className='viewPassword' onClick={ChangeType}><img src={view} alt='view' id='imgPassword' /></span>
+)
 
 export { Input }

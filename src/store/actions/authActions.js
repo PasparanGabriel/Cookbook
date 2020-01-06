@@ -1,4 +1,4 @@
-export const signIn = (user) => {
+export const signIn = user => {
   return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase()
 
@@ -7,14 +7,14 @@ export const signIn = (user) => {
       user.password
     ).then(() => {
       dispatch({ type: 'SIGNIN_SUCCESS' })
-    }).catch((err) => {
+    }).catch(err => {
       dispatch({ 
         type: 'SIGNIN_ERROR',
         err
       })
     })
   }
-} 
+}
 
 export const signOut = () => {
   return (dispatch, getState, { getFirebase }) => {
@@ -26,7 +26,7 @@ export const signOut = () => {
   }
 }
 
-export const signUp = (user) => {
+export const signUp = user => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     const firebase = getFirebase()
     const firestore = getFirestore()
@@ -41,8 +41,8 @@ export const signUp = (user) => {
       })
     }).then(() => {
       dispatch({ type: 'SIGNUP_SUCCESS' })
-    }).catch((err) => {
-      dispatch({ type: 'SIGNUP_ERROR', err})
+    }).catch(err => {
+      dispatch({ type: 'SIGNUP_ERROR', err })
     })
   }
 }

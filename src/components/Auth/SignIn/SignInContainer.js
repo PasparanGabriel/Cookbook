@@ -2,18 +2,14 @@ import { connect } from 'react-redux'
 import { SignIn } from './SignIn'
 import { signIn } from '../../../store/actions/authActions'
 
-const mapStateToProps = (state) => {
-  return {
-    auth: state.firebase.auth,
-    authErrorSignIn: state.auth.authErrorSignIn
-  }
-}
+const mapStateToProps = state => ({
+  auth: state.firebase.auth,
+  authErrorSignIn: state.auth.authErrorSignIn
+})
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    signIn: (user) => dispatch(signIn(user))
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  signIn: user => dispatch(signIn(user))
+})
 
 const SignInContainer = connect(mapStateToProps, mapDispatchToProps)(SignIn)
 
