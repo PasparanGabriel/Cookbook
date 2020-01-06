@@ -82,7 +82,7 @@ class SignIn extends PureComponent {
           <span className='orSignIn'>OR</span>
         </div>
 
-        <Button type='info' size='xLarge' onClick={this.redirectSignUp}>Sign up</Button>
+        <Button type='success' size='xLarge' onClick={this.redirectSignUp}>Sign up</Button>
       </ContainerCentral>
     )
   }

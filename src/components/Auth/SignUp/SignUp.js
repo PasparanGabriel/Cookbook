@@ -97,7 +97,7 @@ class SignUp extends PureComponent {
             {!inputValidation && !user.password}
           </Input>
 
-          <Button type='info' size='xLarge' onClick={this.handleSubmit}>Sign Up</Button>
+          <Button type='success' size='xLarge' onClick={this.handleSubmit}>Sign Up</Button>
         </form>
 
         <div className='orContainerSignUp'>
