@@ -1,6 +1,5 @@
 import React from 'react'
-import { Route, Router, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
+import { Route, HashRouter as Router, Switch } from 'react-router-dom'
 import { Cookbook } from '../View/Cookbook'
 import { SignIn } from '../Auth/SignIn'
 import { SignUp } from '../Auth/SignUp'
@@ -8,7 +7,7 @@ import { Navbar } from '../Navbar'
 
 const App = () => {
   return (
-    <Router history={createBrowserHistory()}>
+    <Router>
       <Navbar />
 
       <Switch>
