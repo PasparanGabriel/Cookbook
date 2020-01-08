@@ -4,12 +4,13 @@ import './Image.css'
 
 class Image extends PureComponent {
   render() {
-    const { src, alt, type } = this.props
+    const { src, alt, type, id } = this.props
     return (
       <img
         src={src}
         alt={alt}
         className={type}
+        id={id}
       />
     )
   }

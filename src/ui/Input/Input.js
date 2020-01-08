@@ -1,7 +1,8 @@
 import React from 'react'
-import './Input.css'
+import { Image } from '../Image'
 import hide from '../../image/hide.png'
 import view from '../../image/view.png'
+import './Input.css'
 
 const Input = props => {
   let input = 'input', label
@@ -46,7 +47,7 @@ const ChangeType = () => {
 }
 
 const ViewPassword = () => (
-  <span className='viewPassword' onClick={ChangeType}><img src={view} alt='view' id='imgPassword' /></span>
+  <span className='viewPassword' onClick={ChangeType}><Image src={view} alt='view' id='imgPassword' /></span>
 )
 
 export { Input }
