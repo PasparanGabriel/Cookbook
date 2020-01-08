@@ -1,0 +1,18 @@
+.containerCategory {
+  padding-bottom: 1rem;
+}
+
+.textCategory {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.rowCategory {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+}
+
+.rowCategory::-webkit-scrollbar {
+  display: none;
+}

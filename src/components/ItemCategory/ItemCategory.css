@@ -1,0 +1,22 @@
+.colCategory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0.5rem;
+}
+
+.titleCategory {
+  font-size: 1rem;
+  margin: 0 0 0 0.5rem;
+  width: 10rem;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 480px) {
+  .colCategory {
+    display: block;
+  }
+
+  .titleCategory {
+    margin: 0;
+  }
+}
