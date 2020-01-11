@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
+import { ChickenRecipes } from '../Recipes/ChickenRecipes'
 
 const Cookbook = props => {
   const { auth } = props
@@ -8,7 +9,7 @@ const Cookbook = props => {
     return <Redirect to='/sign-in' /> 
 
   return (
-    <h1>Cookbook</h1>
+    <ChickenRecipes />
   )
 }
 
