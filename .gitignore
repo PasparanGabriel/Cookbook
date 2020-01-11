@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# settings
+/src/config/apiKey.js
+/src/config/fbConfig.js
+/src/config/urls.js
