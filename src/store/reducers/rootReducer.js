@@ -5,12 +5,14 @@ import { authReducer } from './authReducer'
 import { beefRecipesReducer } from './beefRecipesReducer'
 import { chickenRecipesReducer } from './chickenRecipesReducer'
 import { porkRecipesReducer } from './porkRecipesReducer'
+import { turkeyRecipesReducer } from './turkeyRecipesReducer'
 
 const rootReducer = combineReducers({
   auth: authReducer,
   beefRecipesReducer: beefRecipesReducer,
   chickenRecipesReducer: chickenRecipesReducer,
   porkRecipesReducer: porkRecipesReducer,
+  turkeyRecipesReducer: turkeyRecipesReducer,
   firebase: firebaseReducer,
   firestore: firestoreReducer
 })

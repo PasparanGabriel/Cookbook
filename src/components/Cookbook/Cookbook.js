@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom'
 import { BeefRecipes } from '../Recipes/BeefRecipes'
 import { ChickenRecipes } from '../Recipes/ChickenRecipes'
 import { PorkRecipes } from '../Recipes/PorkRecipes'
+import { TurkeyRecipes } from '../Recipes/TurkeyRecipes'
 
 const Cookbook = props => {
   const { auth } = props
@@ -15,6 +16,7 @@ const Cookbook = props => {
       <BeefRecipes />
       <ChickenRecipes />
       <PorkRecipes />
+      <TurkeyRecipes />
     </div>
   )
 }
