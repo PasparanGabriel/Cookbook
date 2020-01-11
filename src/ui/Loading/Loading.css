@@ -1,0 +1,53 @@
+.ball1::before {
+  animation: animationBounce 500ms alternate infinite;
+  left: 0.5rem;
+}
+
+.ball2::before {
+  animation: animationBounce 500ms alternate infinite;
+  animation-delay: 100ms;
+  left: 1.5rem;
+}
+
+.ball3::before {
+  animation: animationBounce 500ms alternate infinite;
+  animation-delay: 200ms;
+  left: 2.5rem;
+}
+
+.bounce {
+  display: inline-block;
+  border-radius: 100%;
+  height: 2rem;
+  position: relative;
+}
+
+.bounce::before {
+  background-color: black;
+  border-radius: 100%;
+  content: '';
+  height: 0.5rem;
+  width: 0.5rem;
+  position: absolute;
+}
+
+.loading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes animationBounce {
+  0% {
+    top: 1.75rem;
+    height: 0.25rem;
+    transform: scaleX(2);
+  }
+  25% {
+    border-radius: 100%;
+    height: 0.5rem;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 1rem;
+  }
+}
