@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
+import { BeefRecipes } from '../Recipes/BeefRecipes'
 import { ChickenRecipes } from '../Recipes/ChickenRecipes'
 
 const Cookbook = props => {
@@ -9,7 +10,10 @@ const Cookbook = props => {
     return <Redirect to='/sign-in' /> 
 
   return (
-    <ChickenRecipes />
+    <div>
+      <BeefRecipes />
+      <ChickenRecipes />
+    </div>
   )
 }
 
