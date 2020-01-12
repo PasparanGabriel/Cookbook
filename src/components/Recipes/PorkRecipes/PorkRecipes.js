@@ -19,7 +19,9 @@ export const PorkRecipes = props => {
           <ItemCategory
             alt={porkRecipe.image}
             key={porkRecipe.id}
-            src={baseUri + porkRecipe.imageUrls[0]}
+            servings={porkRecipe.servings}
+            src={baseUri + porkRecipe.image}
+            readyInMinutes={porkRecipe.readyInMinutes}
             title={porkRecipe.title}
           />
         )
