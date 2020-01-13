@@ -4,9 +4,9 @@ import { PorkRecipes } from './PorkRecipes'
 
 const mapStateToProps = state => ({
   baseUri: state.porkRecipesReducer.porkBaseUri,
-  porkRecipes: state.porkRecipesReducer.porkRecipes,
   error: state.porkRecipesReducer.porkError,
-  loading: state.porkRecipesReducer.porkLoading
+  loading: state.porkRecipesReducer.porkLoading,
+  porkRecipes: state.porkRecipesReducer.porkRecipes
 })
 
 const mapDispatchToProps = dispatch => ({
