@@ -7,6 +7,7 @@ import { chickenRecipesReducer } from './chickenRecipesReducer'
 import { instructionRecipesReducer } from './instructionRecipesReducer'
 import { porkRecipesReducer } from './porkRecipesReducer'
 import { turkeyRecipesReducer } from './turkeyRecipesReducer'
+import { vegetarianRecipesReducer } from './vegetarianRecipesReducer'
 
 const rootReducer = combineReducers({
   auth: authReducer,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   instructionRecipesReducer: instructionRecipesReducer,
   porkRecipesReducer: porkRecipesReducer,
   turkeyRecipesReducer: turkeyRecipesReducer,
+  vegetarianRecipesReducer: vegetarianRecipesReducer,
   firebase: firebaseReducer,
   firestore: firestoreReducer
 })

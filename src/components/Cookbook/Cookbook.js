@@ -4,6 +4,7 @@ import { BeefRecipes } from '../Recipes/BeefRecipes'
 import { ChickenRecipes } from '../Recipes/ChickenRecipes'
 import { PorkRecipes } from '../Recipes/PorkRecipes'
 import { TurkeyRecipes } from '../Recipes/TurkeyRecipes'
+import { VegetarianRecipes } from '../Recipes/VegetarianRecipes'
 
 const Cookbook = props => {
   const { auth } = props
@@ -17,6 +18,7 @@ const Cookbook = props => {
       <ChickenRecipes />
       <PorkRecipes />
       <TurkeyRecipes />
+      <VegetarianRecipes />
     </div>
   )
 }
