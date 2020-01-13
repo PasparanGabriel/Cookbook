@@ -29,16 +29,22 @@ class ItemCategory extends PureComponent {
 
         <div className='detailsCategory'>
           <p className='titleCategory'>{title}</p>
-          <div className='infoCategory'>
-            <div>
-              <Image src={servingsImg} alt='servings' />
-              <span> {servings} servings</span>
+          { (servings || readyInMinutes) &&
+            <div className='infoCategory'>
+              { servings &&
+                <div>
+                  <Image src={servingsImg} alt='servings' />
+                  <span> {servings} servings</span>
+                </div>
+              }
+              { readyInMinutes &&
+                <div className='readyInMinutesImg'>
+                  <Image src={readyInMinutesImg} alt='readyInMinutes' />
+                  <span> {readyInMinutes} mins</span>
+                </div>
+              }
             </div>
-            <div className='readyInMinutesImg'>
-              <Image src={readyInMinutesImg} alt='readyInMinutes' />
-              <span> {readyInMinutes} mins</span>
-            </div>
-          </div>
+          }
         </div>  
       </div>
     )
@@ -48,9 +54,9 @@ class ItemCategory extends PureComponent {
 ItemCategory.propTypes = {
   alt: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  servings: PropTypes.number.isRequired,
+  servings: PropTypes.number,
   src: PropTypes.string.isRequired,
-  readyInMinutes: PropTypes.number.isRequired,
+  readyInMinutes: PropTypes.number,
   title: PropTypes.string.isRequired
 }
 
