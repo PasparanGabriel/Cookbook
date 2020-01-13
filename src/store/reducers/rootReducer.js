@@ -6,6 +6,7 @@ import { beefRecipesReducer } from './beefRecipesReducer'
 import { chickenRecipesReducer } from './chickenRecipesReducer'
 import { instructionRecipesReducer } from './instructionRecipesReducer'
 import { porkRecipesReducer } from './porkRecipesReducer'
+import { tenMinutesRecipesReducer } from './tenMinutesRecipesReducer'
 import { turkeyRecipesReducer } from './turkeyRecipesReducer'
 import { vegetarianRecipesReducer } from './vegetarianRecipesReducer'
 
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   chickenRecipesReducer: chickenRecipesReducer,
   instructionRecipesReducer: instructionRecipesReducer,
   porkRecipesReducer: porkRecipesReducer,
+  tenMinutesRecipesReducer: tenMinutesRecipesReducer,
   turkeyRecipesReducer: turkeyRecipesReducer,
   vegetarianRecipesReducer: vegetarianRecipesReducer,
   firebase: firebaseReducer,
