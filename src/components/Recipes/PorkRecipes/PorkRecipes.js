@@ -19,6 +19,7 @@ export const PorkRecipes = props => {
           <ItemCategory
             alt={porkRecipe.image}
             key={porkRecipe.id}
+            onClick={() => alert(porkRecipe.id)}
             servings={porkRecipe.servings}
             src={baseUri + porkRecipe.image}
             readyInMinutes={porkRecipe.readyInMinutes}

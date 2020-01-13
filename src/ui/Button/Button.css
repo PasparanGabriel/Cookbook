@@ -5,8 +5,12 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   outline: 0;
+}
+
+.borderRadius {
+  border-radius: 1rem;
 }
 
 .danger {
@@ -17,12 +21,32 @@
   background-color: #e60000;
 }
 
+.dangerOutline {
+  background-color: white; 
+  border: 0.125rem solid red;
+  color: black;
+}
+
+.dangerOutline:hover {
+  background-color: whitesmoke;
+}
+
 .info {
   background-color: dodgerblue;
 }
 
 .info:hover {
   background-color: #0078ec;
+}
+
+.infoOutline {
+  background-color: white; 
+  border: 0.125rem solid dodgerblue;
+  color: black;
+}
+
+.infoOutline:hover {
+  background-color: whitesmoke;
 }
 
 .success {
@@ -33,12 +57,32 @@
   background-color: #006600;
 }
 
+.successOutline {
+  background-color: white; 
+  border: 0.125rem solid green;
+  color: black;
+}
+
+.successOutline:hover {
+  background-color: whitesmoke;
+}
+
 .warning {
   background-color: orange;
 }
 
 .warning:hover {
   background-color: #e69500;
+}
+
+.warningOutline {
+  background-color: white; 
+  border: 0.125rem solid orange;
+  color: black;
+}
+
+.warningOutline:hover {
+  background-color: whitesmoke;
 }
 
 .center {

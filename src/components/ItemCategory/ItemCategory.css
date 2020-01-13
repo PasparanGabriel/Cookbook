@@ -1,13 +1,23 @@
 .colCategory {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
 }
 
 .detailsCategory {
-  font-size: 1.5rem;
-  margin: 0 0 0 0.5rem;
-  width: 15rem;
+  font-size: 1.25rem;
+  width: 16rem;
+  height: 12rem;
+  position: relative;
+}
+
+.infoCategory {
+  bottom: 0;
+  position: absolute;
+}
+
+.lineCategory {
+  border: 0.075rem solid dodgerblue;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -0.25rem;
 }
 
 .titleCategory {
@@ -15,12 +25,7 @@
   word-break: break-word;
 }
 
-@media screen and (max-width: 480px) {
-  .colCategory {
-    display: block;
-  }
-
-  .detailsCategory {
-    margin: 0;
-  }
+.viewDetails {
+  margin-top: -1.25rem;
+  position: relative;
 }
