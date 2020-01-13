@@ -20,7 +20,7 @@ export const MaxCaloriesRecipes = props => {
             <ItemCategory
               alt={maxCaloriesRecipe.image}
               key={maxCaloriesRecipe.id}
-              onClick={() => alert(maxCaloriesRecipe.id)}
+              onClick={() => alert('Working in progress!')}
               src={maxCaloriesRecipe.image}
               title={maxCaloriesRecipe.title}
             />

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import { maxCaloriesRecipesActions } from '../../../store/actions/maxCaloriesRecipesActions'
+import { maxCaloriesRecipesActions } from '../../../store/actions/maxCaloriesRecipesAction'
 import { MaxCaloriesRecipes } from './MaxCaloriesRecipes'
 
 const mapStateToProps = state => ({
-  maxCaloriesRecipes: state.maxCaloriesRecipesReducer.maxCaloriesRecipes,
   error: state.maxCaloriesRecipesReducer.beefError,
-  loading: state.maxCaloriesRecipesReducer.beefLoading
+  loading: state.maxCaloriesRecipesReducer.beefLoading,
+  maxCaloriesRecipes: state.maxCaloriesRecipesReducer.maxCaloriesRecipes
 })
 
 const mapDispatchToProps = dispatch => ({

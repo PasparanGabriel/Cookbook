@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import { tenMinutesRecipesActions } from '../../../store/actions/tenMinutesRecipesActions'
+import { tenMinutesRecipesActions } from '../../../store/actions/tenMinutesRecipesAction'
 import { TenMinutesRecipes } from './TenMinutesRecipes'
 
 const mapStateToProps = state => ({
-  tenMinutesRecipes: state.tenMinutesRecipesReducer.tenMinutesRecipes,
   error: state.tenMinutesRecipesReducer.beefError,
-  loading: state.tenMinutesRecipesReducer.beefLoading
+  loading: state.tenMinutesRecipesReducer.beefLoading,
+  tenMinutesRecipes: state.tenMinutesRecipesReducer.tenMinutesRecipes
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -20,7 +20,7 @@ export const TenMinutesRecipes = props => {
             <ItemCategory
               alt={tenMinutesRecipe.image}
               key={tenMinutesRecipe.id}
-              onClick={() => alert(tenMinutesRecipe.id)}
+              onClick={() => alert('Working in progress!')}
               src={tenMinutesRecipe.image}
               title={tenMinutesRecipe.title}
             />

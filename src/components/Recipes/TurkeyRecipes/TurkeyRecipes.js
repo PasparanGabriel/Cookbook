@@ -5,7 +5,7 @@ import { ItemCategory } from '../../ItemCategory'
 import { Loading } from '../../../ui/Loading'
 
 export const TurkeyRecipes = props => {
-  const { baseUri, turkeyRecipes, error, loading } = props
+  const { baseUri, error, loading, turkeyRecipes } = props
 
   if (error)
     return <Error err={error} />
@@ -20,7 +20,7 @@ export const TurkeyRecipes = props => {
             <ItemCategory
               alt={turkeyRecipe.image}
               key={turkeyRecipe.id}
-              onClick={() => alert(turkeyRecipe.id)}
+              onClick={() => alert('Working in progress!')}
               servings={turkeyRecipe.servings}
               src={baseUri + turkeyRecipe.image}
               readyInMinutes={turkeyRecipe.readyInMinutes}

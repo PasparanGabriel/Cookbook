@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { signOut } from '../../store/actions/authActions'
+import { signOut } from '../../store/actions/authAction'
 import { Navbar } from './Navbar'
 
 

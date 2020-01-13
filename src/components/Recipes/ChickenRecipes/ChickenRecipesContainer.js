@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { chickenRecipesActions } from '../../../store/actions/chickenRecipesActions'
+import { chickenRecipesActions } from '../../../store/actions/chickenRecipesAction'
 import { ChickenRecipes } from './ChickenRecipes'
 
 const mapStateToProps = state => ({

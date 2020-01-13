@@ -18,11 +18,11 @@ const Cookbook = props => {
     <div>
       <BeefRecipes />
       <ChickenRecipes />
-      <MaxCaloriesRecipes />
       <PorkRecipes />
-      <TenMinutesRecipes />
       <TurkeyRecipes />
       <VegetarianRecipes />
+      <TenMinutesRecipes />
+      <MaxCaloriesRecipes />
     </div>
   )
 }
