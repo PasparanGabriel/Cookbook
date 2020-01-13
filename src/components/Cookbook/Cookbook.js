@@ -2,6 +2,7 @@ import React from 'react'
 import { Redirect } from 'react-router-dom'
 import { BeefRecipes } from '../Recipes/BeefRecipes'
 import { ChickenRecipes } from '../Recipes/ChickenRecipes'
+import { MaxCaloriesRecipes } from '../Recipes/MaxCaloriesRecipes'
 import { PorkRecipes } from '../Recipes/PorkRecipes'
 import { TenMinutesRecipes } from '../Recipes/TenMinutesRecipes'
 import { TurkeyRecipes } from '../Recipes/TurkeyRecipes'
@@ -17,6 +18,7 @@ const Cookbook = props => {
     <div>
       <BeefRecipes />
       <ChickenRecipes />
+      <MaxCaloriesRecipes />
       <PorkRecipes />
       <TenMinutesRecipes />
       <TurkeyRecipes />
