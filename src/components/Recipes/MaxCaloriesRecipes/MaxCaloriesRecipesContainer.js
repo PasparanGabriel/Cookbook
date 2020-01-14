@@ -3,15 +3,13 @@ import { maxCaloriesRecipesActions } from '../../../store/actions/maxCaloriesRec
 import { MaxCaloriesRecipes } from './MaxCaloriesRecipes'
 
 const mapStateToProps = state => ({
-  error: state.maxCaloriesRecipesReducer.beefError,
-  loading: state.maxCaloriesRecipesReducer.beefLoading,
-  maxCaloriesRecipes: state.maxCaloriesRecipesReducer.maxCaloriesRecipes
+  error: state.maxCaloriesRecipes.maxCaloriesError,
+  loading: state.maxCaloriesRecipes.maxCaloriesLoading,
+  maxCaloriesRecipes: state.maxCaloriesRecipes.maxCaloriesRecipes
 })
 
 const mapDispatchToProps = dispatch => ({
   maxCaloriesRecipesActions: dispatch(maxCaloriesRecipesActions())
 })
 
-const MaxCaloriesRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(MaxCaloriesRecipes)
-
-export { MaxCaloriesRecipesContainer }
+export const MaxCaloriesRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(MaxCaloriesRecipes)

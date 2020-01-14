@@ -5,7 +5,7 @@ import { SignOut } from '../Auth/SignOut'
 import menu from '../../image/menu.png'
 import './Navbar.css'
 
-const Navbar = props => {
+export const Navbar = props => {
   const { auth } = props
 
   return (
@@ -31,5 +31,3 @@ const Navbar = props => {
     </div>
   )
 }
-
-export { Navbar }

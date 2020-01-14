@@ -3,15 +3,13 @@ import { tenMinutesRecipesActions } from '../../../store/actions/tenMinutesRecip
 import { TenMinutesRecipes } from './TenMinutesRecipes'
 
 const mapStateToProps = state => ({
-  error: state.tenMinutesRecipesReducer.beefError,
-  loading: state.tenMinutesRecipesReducer.beefLoading,
-  tenMinutesRecipes: state.tenMinutesRecipesReducer.tenMinutesRecipes
+  error: state.tenMinutesRecipes.beefError,
+  loading: state.tenMinutesRecipes.beefLoading,
+  tenMinutesRecipes: state.tenMinutesRecipes.tenMinutesRecipes
 })
 
 const mapDispatchToProps = dispatch => ({
   tenMinutesRecipesActions: dispatch(tenMinutesRecipesActions())
 })
 
-const TenMinutesRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(TenMinutesRecipes)
-
-export { TenMinutesRecipesContainer }
+export const TenMinutesRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(TenMinutesRecipes)

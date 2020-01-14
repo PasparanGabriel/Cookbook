@@ -8,7 +8,7 @@ import { TenMinutesRecipes } from '../Recipes/TenMinutesRecipes'
 import { TurkeyRecipes } from '../Recipes/TurkeyRecipes'
 import { VegetarianRecipes } from '../Recipes/VegetarianRecipes'
 
-const Cookbook = props => {
+export const Cookbook = props => {
   const { auth } = props
   
   if (!auth.uid)
@@ -26,5 +26,3 @@ const Cookbook = props => {
     </div>
   )
 }
-
-export { Cookbook }

@@ -11,6 +11,4 @@ const mapDispatchToProps = dispatch => ({
   signOut: () => dispatch(signOut())
 })
 
-const NavbarContainer = connect(mapStateToProps, mapDispatchToProps)(Navbar)
-
-export { NavbarContainer }
+export const NavbarContainer = connect(mapStateToProps, mapDispatchToProps)(Navbar)

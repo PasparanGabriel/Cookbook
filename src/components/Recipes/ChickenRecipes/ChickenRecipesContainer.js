@@ -3,16 +3,14 @@ import { chickenRecipesActions } from '../../../store/actions/chickenRecipesActi
 import { ChickenRecipes } from './ChickenRecipes'
 
 const mapStateToProps = state => ({
-  baseUri: state.chickenRecipesReducer.chickenBaseUri,
-  chickenRecipes: state.chickenRecipesReducer.chickenRecipes,
-  error: state.chickenRecipesReducer.chickenError,
-  loading: state.chickenRecipesReducer.chickenLoading
+  baseUri: state.chickenRecipes.chickenBaseUri,
+  chickenRecipes: state.chickenRecipes.chickenRecipes,
+  error: state.chickenRecipes.chickenError,
+  loading: state.chickenRecipes.chickenLoading
 })
 
 const mapDispatchToProps = dispatch => ({
   chickenRecipesActions: dispatch(chickenRecipesActions())
 })
 
-const ChickenRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(ChickenRecipes)
-
-export { ChickenRecipesContainer }
+export const ChickenRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(ChickenRecipes)

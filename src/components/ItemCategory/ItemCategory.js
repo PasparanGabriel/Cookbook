@@ -6,7 +6,7 @@ import servingsImg from '../../image/servings.png'
 import readyInMinutesImg from '../../image/readyInMinutes.png'
 import './ItemCategory.css'
 
-class ItemCategory extends PureComponent {
+export class ItemCategory extends PureComponent {
   render() {
     const { alt, title, onClick, servings, src, readyInMinutes } = this.props
 
@@ -59,5 +59,3 @@ ItemCategory.propTypes = {
   readyInMinutes: PropTypes.number,
   title: PropTypes.string.isRequired
 }
-
-export { ItemCategory }

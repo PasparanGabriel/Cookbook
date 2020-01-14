@@ -11,18 +11,16 @@ import { tenMinutesRecipesReducer } from './tenMinutesRecipesReducer'
 import { turkeyRecipesReducer } from './turkeyRecipesReducer'
 import { vegetarianRecipesReducer } from './vegetarianRecipesReducer'
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   auth: authReducer,
-  beefRecipesReducer: beefRecipesReducer,
-  chickenRecipesReducer: chickenRecipesReducer,
-  instructionRecipesReducer: instructionRecipesReducer,
-  maxCaloriesRecipesReducer: maxCaloriesRecipesReducer,
-  porkRecipesReducer: porkRecipesReducer,
-  tenMinutesRecipesReducer: tenMinutesRecipesReducer,
-  turkeyRecipesReducer: turkeyRecipesReducer,
-  vegetarianRecipesReducer: vegetarianRecipesReducer,
+  beefRecipes: beefRecipesReducer,
+  chickenRecipes: chickenRecipesReducer,
+  instructionRecipes: instructionRecipesReducer,
+  maxCaloriesRecipes: maxCaloriesRecipesReducer,
+  porkRecipes: porkRecipesReducer,
+  tenMinutesRecipes: tenMinutesRecipesReducer,
+  turkeyRecipes: turkeyRecipesReducer,
+  vegetarianRecipes: vegetarianRecipesReducer,
   firebase: firebaseReducer,
   firestore: firestoreReducer
 })
-
-export { rootReducer }

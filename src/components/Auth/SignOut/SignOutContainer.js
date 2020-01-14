@@ -6,6 +6,4 @@ const mapDispatchToProps = dispatch => ({
   signOut: () => dispatch(signOut())
 })
 
-const SignOutContainer = connect(null, mapDispatchToProps)(SignOut)
-
-export { SignOutContainer }
+export const SignOutContainer = connect(null, mapDispatchToProps)(SignOut)

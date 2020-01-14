@@ -5,7 +5,7 @@ import { Button } from '../../../ui/Button'
 import { Input } from '../../../ui/Input'
 import './SignIn.css'
 
-class SignIn extends PureComponent {
+export class SignIn extends PureComponent {
   state = {
     user: {
       email: '',
@@ -87,5 +87,3 @@ class SignIn extends PureComponent {
     )
   }
 }
-
-export { SignIn }

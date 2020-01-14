@@ -4,7 +4,7 @@ import hide from '../../image/hide.png'
 import view from '../../image/view.png'
 import './Input.css'
 
-const Input = props => {
+export const Input = props => {
   let input = 'input', label
   
   input += props.children ? ' wrongValue' : ''
@@ -49,5 +49,3 @@ const ChangeType = () => {
 const ViewPassword = () => (
   <span className='viewPassword' onClick={ChangeType}><Image src={view} alt='view' id='imgPassword' /></span>
 )
-
-export { Input }

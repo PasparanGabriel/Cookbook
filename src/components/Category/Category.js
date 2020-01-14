@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import './Category.css'
 
-class Category extends PureComponent {
+export class Category extends PureComponent {
   render() {
     const { category, children } = this.props
 
@@ -20,5 +20,3 @@ class Category extends PureComponent {
 Category.propTypes = {
   category: PropTypes.string.isRequired
 }
-
-export { Category }

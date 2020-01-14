@@ -3,16 +3,14 @@ import { vegetarianRecipesActions } from '../../../store/actions/vegetarianRecip
 import { VegetarianRecipes } from './VegetarianRecipes'
 
 const mapStateToProps = state => ({
-  baseUri: state.vegetarianRecipesReducer.vegetarianBaseUri,
-  error: state.vegetarianRecipesReducer.vegetarianError,
-  loading: state.vegetarianRecipesReducer.vegetarianLoading,
-  vegetarianRecipes: state.vegetarianRecipesReducer.vegetarianRecipes
+  baseUri: state.vegetarianRecipes.vegetarianBaseUri,
+  error: state.vegetarianRecipes.vegetarianError,
+  loading: state.vegetarianRecipes.vegetarianLoading,
+  vegetarianRecipes: state.vegetarianRecipes.vegetarianRecipes
 })
 
 const mapDispatchToProps = dispatch => ({
   vegetarianRecipesActions: dispatch(vegetarianRecipesActions())
 })
 
-const VegetarianRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(VegetarianRecipes)
-
-export { VegetarianRecipesContainer }
+export const VegetarianRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(VegetarianRecipes)

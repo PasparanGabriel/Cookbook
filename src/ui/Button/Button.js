@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.css'
 
-const Button = props => {
+export const Button = props => {
   let className = 'btn', onClick
 
   className += props.borderRadius ? ' borderRadius' : ''
@@ -19,5 +19,3 @@ const Button = props => {
     </button>
   )
 }
-
-export { Button }
