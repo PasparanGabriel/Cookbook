@@ -4,7 +4,7 @@ import { firestoreReducer } from 'redux-firestore'
 import { authReducer } from './authReducer'
 import { beefRecipesReducer } from './beefRecipesReducer'
 import { chickenRecipesReducer } from './chickenRecipesReducer'
-import { instructionRecipesReducer } from './instructionRecipesReducer'
+import { cookingInstructionsReducer } from './cookingInstructionsReducer'
 import { maxCaloriesRecipesReducer } from './maxCaloriesRecipesReducer'
 import { porkRecipesReducer } from './porkRecipesReducer'
 import { tenMinutesRecipesReducer } from './tenMinutesRecipesReducer'
@@ -15,7 +15,7 @@ export const rootReducer = combineReducers({
   auth: authReducer,
   beefRecipes: beefRecipesReducer,
   chickenRecipes: chickenRecipesReducer,
-  instructionRecipes: instructionRecipesReducer,
+  cookingInstructions: cookingInstructionsReducer,
   maxCaloriesRecipes: maxCaloriesRecipesReducer,
   porkRecipes: porkRecipesReducer,
   tenMinutesRecipes: tenMinutesRecipesReducer,
