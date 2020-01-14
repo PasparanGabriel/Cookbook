@@ -14,7 +14,7 @@ export const cookingInstructionsReducer = (state = initialState, action) => {
 
     case 'FETCH_COOKINGINSTRUCTIONS_SUCCESS':
       const newcookingInstructions = {...state.cookingInstructions}
-      newcookingInstructions[action.id] = action.resp[0].steps
+      newcookingInstructions[action.id] = action.resp[0] && action.resp[0].steps
 
       return {
         ...state,

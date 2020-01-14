@@ -1,0 +1,23 @@
+.containerCookingInstruction {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.cookingInstructionNumber {
+  border-radius: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cookingInstructionStep {
+  margin-left: 2rem;
+  text-align: justify;
+  word-break: break-word;
+}
+
+.containerCookingText{
+  font-size: 1.5rem;
+}
