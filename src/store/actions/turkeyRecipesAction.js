@@ -3,7 +3,7 @@ import { turkeyRecipes } from '../../config/urls'
 
 const turkeyRecipesUrl = turkeyRecipes + apiKey
 
-export const turkeyRecipesActions = () => {
+export const turkeyRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_TURKEYRECIPES_LOADING' })
     fetch(turkeyRecipesUrl)

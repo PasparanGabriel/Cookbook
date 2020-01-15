@@ -3,7 +3,7 @@ import { beefRecipes } from '../../config/urls'
 
 const beefRecipesUrl = beefRecipes + apiKey
 
-export const beefRecipesActions = () => {
+export const beefRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_BEEFRECIPES_LOADING' })
     fetch(beefRecipesUrl)

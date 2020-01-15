@@ -1,8 +1,8 @@
 const initialState = {
-  beefBaseUri: '',
-  beefError: null,
-  beefLoading: false,
-  beefRecipes: []
+  baseUri: '',
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const beefRecipesReducer = (state = initialState, action) => {
@@ -10,23 +10,23 @@ export const beefRecipesReducer = (state = initialState, action) => {
     case 'FETCH_BEEFRECIPES_LOADING': 
       return {
         ...state,
-        beefLoading: true
+        loading: true
       }
 
     case 'FETCH_BEEFRECIPES_SUCCESS':
       return {
         ...state,
-        beefLoading: false,
-        beefBaseUri: action.resp.baseUri,
-        beefRecipes: action.resp.results
+        baseUri: action.resp.baseUri,
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_BEEFRECIPES_ERROR':
       return {
         ...state,
-        beefLoading: false,
-        beefRecipes: [],
-        beefError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

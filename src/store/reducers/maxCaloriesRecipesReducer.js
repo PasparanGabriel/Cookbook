@@ -1,7 +1,7 @@
 const initialState = {
-  maxCaloriesError: null,
-  maxCaloriesLoading: false,
-  maxCaloriesRecipes: []
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const maxCaloriesRecipesReducer = (state = initialState, action) => {
@@ -9,22 +9,22 @@ export const maxCaloriesRecipesReducer = (state = initialState, action) => {
     case 'FETCH_MAXCALORIESRECIPES_LOADING': 
       return {
         ...state,
-        maxCaloriesLoading: true
+        loading: true
       }
 
     case 'FETCH_MAXCALORIESRECIPES_SUCCESS':
       return {
         ...state,
-        maxCaloriesLoading: false,
-        maxCaloriesRecipes: action.resp.results
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_MAXCALORIESRECIPES_ERROR':
       return {
         ...state,
-        maxCaloriesLoading: false,
-        maxCaloriesRecipes: [],
-        maxCaloriesError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

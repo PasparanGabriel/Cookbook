@@ -3,7 +3,7 @@ import { tenMinutesRecipes } from '../../config/urls'
 
 const tenMinutesRecipesUrl = tenMinutesRecipes + apiKey
 
-export const tenMinutesRecipesActions = () => {
+export const tenMinutesRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_TENMINUTESRECIPES_LOADING' })
     fetch(tenMinutesRecipesUrl)

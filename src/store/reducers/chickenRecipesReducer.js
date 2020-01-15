@@ -1,8 +1,8 @@
 const initialState = {
-  chickenBaseUri: '',
-  chickenError: null,
-  chickenLoading: false,
-  chickenRecipes: []
+  baseUri: '',
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const chickenRecipesReducer = (state = initialState, action) => {
@@ -10,23 +10,23 @@ export const chickenRecipesReducer = (state = initialState, action) => {
     case 'FETCH_CHICKENRECIPES_LOADING': 
       return {
         ...state,
-        chickenLoading: true
+        loading: true
       }
 
     case 'FETCH_CHICKENRECIPES_SUCCESS':
       return {
         ...state,
-        chickenLoading: false,
-        chickenBaseUri: action.resp.baseUri,
-        chickenRecipes: action.resp.results
+        baseUri: action.resp.baseUri,
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_CHICKENRECIPES_ERROR':
       return {
         ...state,
-        chickenLoading: false,
-        chickenRecipes: [],
-        chickenError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

@@ -1,8 +1,8 @@
 const initialState = {
-  vegetarianBaseUri: '',
-  vegetarianError: null,
-  vegetarianLoading: false,
-  vegetarianRecipes: []
+  baseUri: '',
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const vegetarianRecipesReducer = (state = initialState, action) => {
@@ -10,23 +10,23 @@ export const vegetarianRecipesReducer = (state = initialState, action) => {
     case 'FETCH_VEGETARIANRECIPES_LOADING': 
       return {
         ...state,
-        vegetarianLoading: true
+        loading: true
       }
 
     case 'FETCH_VEGETARIANRECIPES_SUCCESS':
       return {
         ...state,
-        vegetarianLoading: false,
-        vegetarianBaseUri: action.resp.baseUri,
-        vegetarianRecipes: action.resp.results
+        baseUri: action.resp.baseUri,
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_VEGETARIANRECIPES_ERROR':
       return {
         ...state,
-        vegetarianLoading: false,
-        vegetarianRecipes: [],
-        vegetarianError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

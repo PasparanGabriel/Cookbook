@@ -3,7 +3,7 @@ import { chickenRecipes } from '../../config/urls'
 
 const chickenRecipesUrl = chickenRecipes + apiKey
 
-export const chickenRecipesActions = () => {
+export const chickenRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_CHICKENRECIPES_LOADING' })
     fetch(chickenRecipesUrl)

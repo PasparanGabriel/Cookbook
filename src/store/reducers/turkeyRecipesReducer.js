@@ -1,8 +1,8 @@
 const initialState = {
-  turkeyBaseUri: '',
-  turkeyError: null,
-  turkeyLoading: false,
-  turkeyRecipes: []
+  baseUri: '',
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const turkeyRecipesReducer = (state = initialState, action) => {
@@ -10,26 +10,26 @@ export const turkeyRecipesReducer = (state = initialState, action) => {
     case 'FETCH_TURKEYRECIPES_LOADING': 
       return {
         ...state,
-        turkeyLoading: true
+        loading: true
       }
 
     case 'FETCH_TURKEYRECIPES_SUCCESS':
       return {
         ...state,
-        turkeyLoading: false,
-        turkeyBaseUri: action.resp.baseUri,
-        turkeyRecipes: action.resp.results
+        baseUri: action.resp.baseUri,
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_TURKEYRECIPES_ERROR':
       return {
         ...state,
-        turkeyLoading: false,
-        turkeyRecipes: [],
-        turkeyError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
-    default: 
+    default:
       return state
   }
 }

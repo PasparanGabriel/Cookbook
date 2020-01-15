@@ -3,7 +3,7 @@ import { vegetarianRecipes } from '../../config/urls'
 
 const vegetarianRecipesUrl = vegetarianRecipes + apiKey
 
-export const vegetarianRecipesActions = () => {
+export const vegetarianRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_VEGETARIANRECIPES_LOADING' })
     fetch(vegetarianRecipesUrl)

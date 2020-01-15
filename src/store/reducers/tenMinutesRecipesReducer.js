@@ -1,7 +1,7 @@
 const initialState = {
-  tenMinutesError: null,
-  tenMinutesLoading: false,
-  tenMinutesRecipes: []
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const tenMinutesRecipesReducer = (state = initialState, action) => {
@@ -9,22 +9,22 @@ export const tenMinutesRecipesReducer = (state = initialState, action) => {
     case 'FETCH_TENMINUTESRECIPES_LOADING': 
       return {
         ...state,
-        tenMinutesLoading: true
+        loading: true
       }
 
     case 'FETCH_TENMINUTESRECIPES_SUCCESS':
       return {
         ...state,
-        tenMinutesLoading: false,
-        tenMinutesRecipes: action.resp.results
+        loading: false,
+        results: action.resp.results
       }
 
     case 'FETCH_TENMINUTESRECIPES_ERROR':
       return {
         ...state,
-        tenMinutesLoading: false,
-        tenMinutesRecipes: [],
-        tenMinutesError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

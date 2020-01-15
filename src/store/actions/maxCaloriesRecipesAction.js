@@ -3,7 +3,7 @@ import { maxCaloriesRecipes } from '../../config/urls'
 
 const maxCaloriesRecipesUrl = maxCaloriesRecipes + apiKey
 
-export const maxCaloriesRecipesActions = () => {
+export const maxCaloriesRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_MAXCALORIESRECIPES_LOADING' })
     fetch(maxCaloriesRecipesUrl)

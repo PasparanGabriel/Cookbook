@@ -1,8 +1,8 @@
 const initialState = {
-  porkBaseUri: '',
-  porkError: null,
-  porkLoading: false,
-  porkRecipes: []
+  baseUri: '',
+  error: null,
+  loading: false,
+  results: []
 }
 
 export const porkRecipesReducer = (state = initialState, action) => {
@@ -10,23 +10,23 @@ export const porkRecipesReducer = (state = initialState, action) => {
     case 'FETCH_PORKRECIPES_LOADING': 
       return {
         ...state,
-        porkLoading: true
+        loading: true
       }
 
     case 'FETCH_PORKRECIPES_SUCCESS':
       return {
         ...state,
-        porkLoading: false,
-        porkBaseUri: action.resp.baseUri,
-        porkRecipes: action.resp.results
-      }
+        baseUri: action.resp.baseUri,
+        loading: false,
+        results: action.resp.results
 
+      }
     case 'FETCH_PORKRECIPES_ERROR':
       return {
         ...state,
-        porkLoading: false,
-        porkRecipes: [],
-        porkError: action.error
+        error: action.error,
+        loading: false,
+        results: []
       }
 
     default: 

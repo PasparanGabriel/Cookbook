@@ -1,16 +1,16 @@
 import { connect } from 'react-redux'
-import { beefRecipesActions } from '../../../store/actions/beefRecipesAction'
+import { beefRecipesAction } from '../../../store/actions/beefRecipesAction'
 import { BeefRecipes } from './BeefRecipes'
 
 const mapStateToProps = state => ({
-  baseUri: state.beefRecipes.beefBaseUri,
-  beefRecipes: state.beefRecipes.beefRecipes,
-  error: state.beefRecipes.beefError,
-  loading: state.beefRecipes.beefLoading
+  baseUri: state.beefRecipes.baseUri,
+  beefRecipes: state.beefRecipes.results,
+  error: state.beefRecipes.error,
+  loading: state.beefRecipes.loading
 })
 
 const mapDispatchToProps = dispatch => ({
-  beefRecipesActions: dispatch(beefRecipesActions())
+  beefRecipesActions: dispatch(beefRecipesAction())
 })
 
 export const BeefRecipesContainer = connect(mapStateToProps, mapDispatchToProps)(BeefRecipes)
