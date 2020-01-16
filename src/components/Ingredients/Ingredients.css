@@ -1,0 +1,27 @@
+.ingredientContainer {
+  padding: 0 0.5rem 0.5rem;
+  display: inline-grid;
+}
+
+.ingredientDetails {
+  height: max-content;
+  width: 8rem;
+  text-align: center;
+}
+
+.ingredientName {
+  text-transform: capitalize;
+}
+
+.ingredientQuantity {
+  text-transform: lowercase;
+}
+
+.ingredientsContainer {
+  margin-bottom: 1rem;
+}
+
+.ingredientsTitle {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}

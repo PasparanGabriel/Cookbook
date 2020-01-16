@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../../ui/Button'
 import { CookingInstructions } from '../CookingInstructions'
+import { Ingredients } from '../Ingredients'
 import './ViewDetails.css'
 
 export const ViewDetails = props => {
@@ -19,6 +20,7 @@ export const ViewDetails = props => {
             View Details
             <Button type='danger' position='right' onClick={closeModal}>X</Button>
           </h1>
+          <Ingredients id={props.id} />
           <CookingInstructions id={props.id} />
         </div>
       </div>
