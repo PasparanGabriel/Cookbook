@@ -1,20 +1,65 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button } from '../../ui/Button'
+import { Image } from '../../ui/Image'
+import servingsImg from '../../image/servings.png'
+import readyInMinutesImg from '../../image/readyInMinutes.png'
 import './Category.css'
 
 export const Category = props => {
-  const { category, children } = props
+  const { baseUri, category, openModal, title } = props
 
   return (
     <div className='containerCategory'>
-      <h1 className='textCategory'>{category}</h1>
+      <h1 className='titleCategory'>{title}</h1>
       <div className='rowCategory'>
-        {children}
+        { category && category.map(item =>
+            <div className='colCategory' key={item.id}>
+              <Image src={baseUri + item.image} alt={item.image} type='category' />
+
+              <hr className='lineCategory'/>
+              
+              <div className='viewDetails'>
+                <Button
+                  borderRadius
+                  onClick={() => openModal(item.id)}
+                  position='center'
+                  type='infoOutline'
+                >
+                  View details
+                </Button>
+              </div>
+
+              <div className='detailsCategory'>
+                <p className='textCategory'>{item.title}</p>
+                { (item.servings || item.readyInMinutes) &&
+                  <div className='infoCategory'>
+                    { item.servings &&
+                      <div>
+                        <Image src={servingsImg} alt='servings' />
+                        <span> {item.servings} servings</span>
+                      </div>
+                    }
+                    { item.readyInMinutes &&
+                      <div className='readyInMinutesImg'>
+                        <Image src={readyInMinutesImg} alt='readyInMinutes' />
+                        <span> {item.readyInMinutes} mins</span>
+                      </div>
+                    }
+                  </div>
+                }
+              </div>  
+            </div>
+          )
+        }
       </div>
     </div>
   )
 }
 
 Category.propTypes = {
-  category: PropTypes.string.isRequired
+  baseUri: PropTypes.string.isRequired,
+  category: PropTypes.array.isRequired,
+  openModal: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired
 }

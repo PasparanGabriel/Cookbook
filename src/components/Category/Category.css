@@ -1,10 +1,27 @@
+.colCategory {
+  padding: 0 0.75rem;
+}
+
 .containerCategory {
   padding-bottom: 1rem;
 }
 
-.textCategory {
-  font-size: 1.5rem;
-  margin: 0.5rem;
+.detailsCategory {
+  font-size: 1.25rem;
+  width: 16rem;
+  height: 10.5rem;
+  position: relative;
+}
+
+.infoCategory {
+  bottom: 0;
+  position: absolute;
+}
+
+.lineCategory {
+  border: 0.075rem solid dodgerblue;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -0.25rem;
 }
 
 .rowCategory {
@@ -15,4 +32,19 @@
 
 .rowCategory::-webkit-scrollbar {
   display: none;
+}
+
+.titleCategory {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.textCategory {
+  margin: 0;
+  word-break: break-word;
+}
+
+.viewDetails {
+  margin-top: -1.25rem;
+  position: relative;
 }

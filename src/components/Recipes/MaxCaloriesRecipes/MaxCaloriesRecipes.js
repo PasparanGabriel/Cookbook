@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Category } from '../../Category'
 import { Error } from '../../../ui/Error'
-import { ItemCategory } from '../../ItemCategory'
 import { Loading } from '../../../ui/Loading'
 import { ViewDetails } from '../../ViewDetails'
 
@@ -30,18 +29,7 @@ export class MaxCaloriesRecipes extends PureComponent {
     if (maxCaloriesRecipes) {
       return (
         <div>
-          <Category category='Under 500 calories'>
-            { maxCaloriesRecipes && maxCaloriesRecipes.map(maxCaloriesRecipe =>
-                <ItemCategory
-                  alt={maxCaloriesRecipe.image}
-                  key={maxCaloriesRecipe.id}
-                  onClick={() => this.openModal(maxCaloriesRecipe.id)}
-                  src={maxCaloriesRecipe.image}
-                  title={maxCaloriesRecipe.title}
-                />
-              )
-            }
-          </Category>
+          <Category baseUri='' category={maxCaloriesRecipes} openModal={this.openModal} title='Under 500 calories' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </div>
       )

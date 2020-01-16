@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Category } from '../../Category'
 import { Error } from '../../../ui/Error'
-import { ItemCategory } from '../../ItemCategory'
 import { Loading } from '../../../ui/Loading'
 import { ViewDetails } from '../../ViewDetails'
 
@@ -30,25 +29,12 @@ export class TurkeyRecipes extends PureComponent {
     if (turkeyRecipes) {
       return (
         <div>
-          <Category category='Turkey'>
-            { turkeyRecipes && turkeyRecipes.map(turkeyRecipe =>
-                <ItemCategory
-                  alt={turkeyRecipe.image}
-                  key={turkeyRecipe.id}
-                  onClick={() => this.openModal(turkeyRecipe.id)}
-                  servings={turkeyRecipe.servings}
-                  src={baseUri + turkeyRecipe.image}
-                  readyInMinutes={turkeyRecipe.readyInMinutes}
-                  title={turkeyRecipe.title}
-                />
-              )
-            }
-          </Category>
+          <Category baseUri={baseUri} category={turkeyRecipes} openModal={this.openModal} title='Turkey' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </div>
       )  
     } else {
       return null
-    }    
+    }
   }
 }
