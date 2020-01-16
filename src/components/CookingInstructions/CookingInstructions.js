@@ -24,16 +24,16 @@ export class CookingInstructions extends PureComponent {
         <div>
           <h1 className='containerCookingText'>Cooking Instructions</h1>
           { cookingInstructions[this.props.id] && cookingInstructions[this.props.id].map(cookingInstruction =>
-             <div className='containerCookingInstruction' key={cookingInstruction.number}>
-               <div className='cookingInstructionNumber'>{cookingInstruction.number}</div>
-               <div className='cookingInstructionStep'>{cookingInstruction.step}</div>
-             </div>
+              <div className='containerCookingInstruction' key={cookingInstruction.number}>
+                <div className='cookingInstructionNumber'>{cookingInstruction.number}</div>
+                <div className='cookingInstructionStep'>{cookingInstruction.step}</div>
+              </div>
             )
           }
         </div>
       )
     } else {
-      return <Loading />
+      return null
     }
   }
 }

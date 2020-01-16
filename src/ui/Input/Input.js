@@ -47,5 +47,7 @@ const ChangeType = () => {
 }
 
 const ViewPassword = () => (
-  <span className='viewPassword' onClick={ChangeType}><Image src={view} alt='view' id='imgPassword' /></span>
+  <span className='viewPassword' onClick={ChangeType}>
+    <Image src={view} alt='view' id='imgPassword' />
+  </span>
 )

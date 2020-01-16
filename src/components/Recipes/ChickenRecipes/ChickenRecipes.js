@@ -1,36 +1,55 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import { Category } from '../../Category'
 import { Error } from '../../../ui/Error'
 import { ItemCategory } from '../../ItemCategory'
 import { Loading } from '../../../ui/Loading'
+import { ViewDetails } from '../../ViewDetails'
 
-export const ChickenRecipes = props => {
-  const { baseUri, chickenRecipes, error, loading } = props
+export class ChickenRecipes extends PureComponent {
+  state = {
+    id: 0,
+    show: false
+  }
+  
+  openModal = id => {
+    this.setState({
+      id: id,
+      show: !this.state.show
+    })
+  }
 
-  if (error)
-    return <Error err={error} />
+  render() {
+    const { baseUri, chickenRecipes, error, loading } = this.props
 
-  if (loading)
-    return <Loading />
+    if (error)
+      return <Error err={error} />
 
-  if (chickenRecipes) {
-    return (
-      <Category category='Chicken'>
-        { chickenRecipes && chickenRecipes.map(chickenRecipe =>
-            <ItemCategory
-              alt={chickenRecipe.image}
-              key={chickenRecipe.id}
-              onClick={() => alert('Working in progress!')}
-              servings={chickenRecipe.servings}
-              src={baseUri + chickenRecipe.image}
-              readyInMinutes={chickenRecipe.readyInMinutes}
-              title={chickenRecipe.title}
-            />
-          )
-        }
-      </Category>
-    )
-  } else {
-    return <Loading />
+    if (loading)
+      return <Loading />
+
+    if (chickenRecipes) {
+      return (
+        <div>
+          <Category category='Chicken'>
+            { chickenRecipes && chickenRecipes.map(chickenRecipe =>
+                <ItemCategory
+                  alt={chickenRecipe.image}
+                  key={chickenRecipe.id}
+                  onClick={() => this.openModal(chickenRecipe.id)}
+                  servings={chickenRecipe.servings}
+                  src={baseUri + chickenRecipe.image}
+                  readyInMinutes={chickenRecipe.readyInMinutes}
+                  title={chickenRecipe.title}
+                />
+              )
+            }
+          </Category>
+          <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
+        </div>
+      )
+    } else {
+      return null
+    }
+
   }
 }

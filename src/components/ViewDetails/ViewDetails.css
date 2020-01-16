@@ -1,0 +1,25 @@
+.viewDetailsModal {
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.viewDetailsModalContent {
+  background-color: whitesmoke;
+  margin: auto;
+  width: 80%;
+}
+
+.viewDetailsModalPadding {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .viewDetailsModalContent {
+    width: 100%;
+  }
+}

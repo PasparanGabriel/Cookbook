@@ -2,9 +2,9 @@ import { connect } from 'react-redux'
 import { CookingInstructions } from './CookingInstructions'
 
 const mapStateToProps = state => ({
-  cookingInstructions: state.cookingInstructions.cookingInstructions,
-  error: state.cookingInstructions.cookingInstructionsError,
-  loading: state.cookingInstructions.cookingInstructionsLoading
+  cookingInstructions: state.cookingInstructions.results,
+  error: state.cookingInstructions.error,
+  loading: state.cookingInstructions.loading
 })
 
 const mapDispatchToProps = dispatch => ({
