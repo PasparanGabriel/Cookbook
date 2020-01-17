@@ -5,6 +5,7 @@ import { authReducer } from './authReducer'
 import { beefRecipesReducer } from './beefRecipesReducer'
 import { chickenRecipesReducer } from './chickenRecipesReducer'
 import { cookingInstructionsReducer } from './cookingInstructionsReducer'
+import { equipmentReducer } from './equipmentReducer'
 import { ingredientsRecipesReducer } from './ingredientsRecipesReducer'
 import { maxCaloriesRecipesReducer } from './maxCaloriesRecipesReducer'
 import { summaryReducer } from './summaryReducer'
@@ -18,6 +19,7 @@ export const rootReducer = combineReducers({
   beefRecipes: beefRecipesReducer,
   chickenRecipes: chickenRecipesReducer,
   cookingInstructions: cookingInstructionsReducer,
+  equipment: equipmentReducer,
   ingredientsRecipes: ingredientsRecipesReducer,
   maxCaloriesRecipes: maxCaloriesRecipesReducer,
   summary: summaryReducer,
