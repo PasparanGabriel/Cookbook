@@ -1,15 +1,21 @@
 .containerEquipment {
-  padding: 0 0.5rem 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
   display: inline-grid;
 }
 
-.equipmentName {
+.imgEquipment {
+  height: 8rem;
+  width: 8rem;
+}
+
+.nameEquipment {
   height: max-content;
   width: 8rem;
   text-align: center;
   text-transform: capitalize;
 }
 
-.equipmentTitle {
+.titleEquipment {
   font-size: 1.5rem;
 }

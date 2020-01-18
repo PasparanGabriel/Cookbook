@@ -20,9 +20,9 @@ export const ViewDetails = props => {
 
   return (
     show &&
-    <div className='viewDetailsModal'>
-      <div className='viewDetailsModalContent'>
-        <div className='viewDetailsModalPadding '>
+    <div className='modalViewDetails'>
+      <div className='contentViewDetails'>
+        <div className='paddingViewDetails'>
           <Button type='danger' position='right' onClick={closeModal}>X</Button>
           <Summary id={props.id} />
           <Ingredients id={props.id} />

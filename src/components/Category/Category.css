@@ -1,5 +1,7 @@
 .colCategory {
-  padding: 0 0.75rem;
+  margin-right: 1rem;
+  border: 4px #0000cc solid;
+  border-radius: 4px;
 }
 
 .containerCategory {
@@ -7,21 +9,22 @@
 }
 
 .detailsCategory {
+  display: flex;
+  flex-direction: column;
   font-size: 1.25rem;
-  width: 16rem;
   height: 10.5rem;
-  position: relative;
+  padding: 0.25rem 0.75rem;
+  justify-content: space-between;
 }
 
-.infoCategory {
-  bottom: 0;
-  position: absolute;
+.imgCategory {
+  width: 16rem;
+  height: 16rem;
 }
 
 .lineCategory {
-  border: 0.075rem solid dodgerblue;
-  border-radius: 0 0 1rem 1rem;
-  margin-top: -0.25rem;
+  border: 2px solid #0000cc;
+  margin-top: -1px;
 }
 
 .rowCategory {
@@ -36,7 +39,6 @@
 
 .titleCategory {
   font-size: 1.5rem;
-  margin: 0.5rem;
 }
 
 .textCategory {
@@ -45,6 +47,6 @@
 }
 
 .viewDetails {
-  margin-top: -1.25rem;
+  margin-top: -1.75rem;
   position: relative;
 }

@@ -3,7 +3,7 @@
   margin-bottom: 0.5rem;
 }
 
-.cookingInstructionNumber {
+.numberCookingInstruction {
   border-radius: 100%;
   font-size: 1.25rem;
   font-weight: bold;
@@ -12,12 +12,12 @@
   transform: translateY(-50%);
 }
 
-.cookingInstructionStep {
+.stepCookingInstruction {
   margin-left: 2rem;
   text-align: justify;
   word-break: break-word;
 }
 
-.containerCookingText{
+.textCookingInstruction {
   font-size: 1.5rem;
 }

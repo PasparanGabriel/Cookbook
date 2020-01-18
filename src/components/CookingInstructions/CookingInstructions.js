@@ -11,7 +11,7 @@ export class CookingInstructions extends PureComponent {
   }
 
   render() {
-    const { cookingInstructions, error, loading } = this.props
+    const { cookingInstructions, error, id, loading } = this.props
 
     if (error)
       return <Error err={error} />
@@ -19,14 +19,14 @@ export class CookingInstructions extends PureComponent {
     if (loading)
       return <Loading />
 
-    if (cookingInstructions[this.props.id]) {
+    if (cookingInstructions[id]) {
       return (
         <div>
-          <h1 className='containerCookingText'>Cooking Instructions</h1>
-          { cookingInstructions[this.props.id] && cookingInstructions[this.props.id].map(cookingInstruction =>
+          { !!cookingInstructions[id] && <h1 className='textCookingInstruction'>Cooking Instructions</h1> }
+          { cookingInstructions[id] && cookingInstructions[id].map(cookingInstruction =>
               <div className='containerCookingInstruction' key={cookingInstruction.number}>
-                <div className='cookingInstructionNumber'>{cookingInstruction.number}</div>
-                <div className='cookingInstructionStep'>{cookingInstruction.step}</div>
+                <div className='numberCookingInstruction'>{cookingInstruction.number}</div>
+                <div className='stepCookingInstruction'>{cookingInstruction.step}</div>
               </div>
             )
           }
@@ -38,6 +38,6 @@ export class CookingInstructions extends PureComponent {
   }
 }
 
-CookingInstructions.propsType ={
+CookingInstructions.propsType = {
   id: PropTypes.number.isRequired
 }

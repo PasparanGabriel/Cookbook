@@ -11,7 +11,7 @@ export class Summary extends PureComponent {
   }
 
   render() {
-    const { error, loading, summary } = this.props
+    const { error, id, loading, summary } = this.props
 
     if (error)
       return <Error err={error} />
@@ -19,11 +19,11 @@ export class Summary extends PureComponent {
     if (loading)
       return <Loading />
 
-    if (summary[this.props.id]) {
+    if (summary[id]) {
       return (
         <div>
-          <h1 className='summaryTitle'>{summary[this.props.id].title}</h1>
-          <p className='summaryText' dangerouslySetInnerHTML={{ __html: summary[this.props.id].summary}} />
+          <h1 className='titleSummary'>{summary[id].title}</h1>
+          <p dangerouslySetInnerHTML={{ __html: summary[id].summary}} />
         </div>
       )
     } else {

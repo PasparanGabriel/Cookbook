@@ -12,7 +12,7 @@ export class Ingredients extends PureComponent {
   }
 
   render() {
-    const { ingredientsRecipes, error, loading } = this.props
+    const { ingredientsRecipes, error, id, loading } = this.props
     let item = 0
 
     if (error)
@@ -21,23 +21,25 @@ export class Ingredients extends PureComponent {
     if (loading)
       return <Loading />
 
-    if (ingredientsRecipes[this.props.id]) {
+    if (ingredientsRecipes[id]) {
       return (
         <div>
-          <h1 className='ingredientsTitle'>Ingredients</h1>
-          <div className='ingredientsContainer'>
-            { ingredientsRecipes[this.props.id] && ingredientsRecipes[this.props.id].map(ingredientsRecipe =>
-                <div className='ingredientContainer' key={item++}>
-                  <Image
-                    src={'https://spoonacular.com/cdn/ingredients_100x100/' + ingredientsRecipe.image}
-                    alt={ingredientsRecipe.image}
-                    type='ingredient'
-                  />
-                  <div className='ingredientDetails'>
-                    <div className='ingredientName'>
+          <h1 className='titleIngredients'>Ingredients</h1>
+          <div className='containerIngredients'>
+            { ingredientsRecipes[id] && ingredientsRecipes[id].map(ingredientsRecipe =>
+                <div className='containerIngredient' key={item++}>
+                  <div className='imgEquipment'>
+                    <Image
+                      src={'https://spoonacular.com/cdn/ingredients_100x100/' + ingredientsRecipe.image}
+                      alt={ingredientsRecipe.image}
+                      type='ingredient'
+                    />
+                  </div>
+                  <div className='detailsIngredient'>
+                    <div className='nameIngredient'>
                       {ingredientsRecipe.name}
                     </div>
-                    <div className='ingredientQuantity'>
+                    <div className='quantityingredient'>
                       {ingredientsRecipe.amount.metric.value + ' ' + ingredientsRecipe.amount.metric.unit}
                     </div>
                   </div>

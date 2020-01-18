@@ -1,5 +1,17 @@
+.failedSignIn {
+  color: red;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.orContainerSignIn {
+  border: 2px solid black;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
 .orSignIn {
-  background: white;
+  background: whitesmoke;
   left: 50%;
   width: 3rem;
   margin: -0.75rem 0 0 -1.5rem;
@@ -7,18 +19,6 @@
   position: absolute;
 }
 
-.orContainerSignIn {
-  border: 0.075rem solid black;
-  margin: 2rem 1rem;
-  position: relative;
-}
-
 .textSignIn {
   font-size: 1.5rem;
-}
-
-.signInFailed {
-  color: red;
-  font-size: 0.75rem;
-  margin-bottom: 1rem;
 }

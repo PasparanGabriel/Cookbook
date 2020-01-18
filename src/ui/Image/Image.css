@@ -1,20 +1,19 @@
 .category {
-  height: 16rem;
-  width: 16rem;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .equipment {
   background-color: white;
-  height: 8rem;
-  width: 8rem;
+  height: 100%;
+  width: 100%;
   object-fit: none;
 }
 
-
 .ingredient {
   background-color: white;
-  height: 8rem;
-  width: 8rem;
+  height: 100%;
+  width: 100%;
   object-fit: none;
 }

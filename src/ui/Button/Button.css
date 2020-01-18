@@ -23,7 +23,7 @@
 
 .dangerOutline {
   background-color: white; 
-  border: 0.125rem solid red;
+  border: 2px solid red;
   color: black;
 }
 
@@ -41,7 +41,7 @@
 
 .infoOutline {
   background-color: white; 
-  border: 0.125rem solid dodgerblue;
+  border: 2px solid dodgerblue;
   color: black;
 }
 
@@ -59,7 +59,7 @@
 
 .successOutline {
   background-color: white; 
-  border: 0.125rem solid green;
+  border: 2px solid green;
   color: black;
 }
 
@@ -77,11 +77,21 @@
 
 .warningOutline {
   background-color: white; 
-  border: 0.125rem solid orange;
+  border: 2px solid orange;
   color: black;
 }
 
 .warningOutline:hover {
+  background-color: whitesmoke;
+}
+
+.viewDetailsBtn {
+  background-color: white; 
+  border: 2px solid #0000cc;
+  color: black;
+}
+
+.viewDetailsBtn:hover {
   background-color: whitesmoke;
 }
 

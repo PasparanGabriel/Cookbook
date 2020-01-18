@@ -15,7 +15,9 @@ export const Category = props => {
       <div className='rowCategory'>
         { category && category.map(item =>
             <div className='colCategory' key={item.id}>
-              <Image src={baseUri + item.image} alt={item.image} type='category' />
+              <div className='imgCategory'>
+                <Image src={baseUri + item.image} alt={item.image} type='category' />
+              </div>
 
               <hr className='lineCategory'/>
               
@@ -24,7 +26,7 @@ export const Category = props => {
                   borderRadius
                   onClick={() => openModal(item.id)}
                   position='center'
-                  type='infoOutline'
+                  type='viewDetailsBtn'
                 >
                   View details
                 </Button>
@@ -33,7 +35,7 @@ export const Category = props => {
               <div className='detailsCategory'>
                 <p className='textCategory'>{item.title}</p>
                 { (item.servings || item.readyInMinutes) &&
-                  <div className='infoCategory'>
+                  <div>
                     { item.servings &&
                       <div>
                         <Image src={servingsImg} alt='servings' />

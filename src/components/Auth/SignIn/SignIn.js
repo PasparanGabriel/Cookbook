@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Redirect } from 'react-router-dom'
-import { ContainerCentral } from '../../../utils/ContainerCentral'
+import { ContainerCentral } from '../../ContainerCentral'
 import { Button } from '../../../ui/Button'
 import { Input } from '../../../ui/Input'
 import './SignIn.css'
@@ -52,7 +52,7 @@ export class SignIn extends PureComponent {
     return (
       <ContainerCentral>
         <h1 className='textSignIn'>Sign In</h1>
-        { authErrorSignIn && <h1 className='signInFailed'>{authErrorSignIn}</h1> }
+        { authErrorSignIn && <h1 className='failedSignIn'>{authErrorSignIn}</h1> }
 
         <form>        
           <Input

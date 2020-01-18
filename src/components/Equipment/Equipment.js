@@ -12,7 +12,8 @@ export class Equipment extends PureComponent {
   }
 
   render() {
-    const { equipment, error, loading } = this.props
+    const { equipment, error, id, loading } = this.props
+    let number = 0
 
     if (error)
       return <Error err={error} />
@@ -20,18 +21,20 @@ export class Equipment extends PureComponent {
     if (loading)
       return <Loading />
 
-    if (equipment[this.props.id]) {
+    if (equipment[id]) {
       return (
         <div>
-          <h1 className='equipmentTitle'>Equipment</h1>
-          { equipment[this.props.id] && equipment[this.props.id].map(item =>
-              <div className='containerEquipment' key={item.number}>
-                <Image
+          { !!equipment[id].length && <h1 className='titleEquipment'>Equipment</h1> }
+          { equipment[id] && equipment[id].map(item =>
+              <div className='containerEquipment' key={number++}>
+                <div className='imgEquipment'>
+                  <Image
                     src={'https://spoonacular.com/cdn/equipment_100x100/' + item.image}
                     alt={item.image}
                     type='equipment'
                   />
-                  <div className='equipmentName'>
+                </div>
+                  <div className='nameEquipment'>
                     {item.name}
                   </div>
               </div>

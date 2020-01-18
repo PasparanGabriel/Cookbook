@@ -1,0 +1,16 @@
+body {
+  background-color: whitesmoke;
+}
+
+.containerCookbook {
+  width: 80%;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+
+@media screen and (max-width: 480px) {
+  .containerCookbook {
+    width: 95%;
+  }
+}
