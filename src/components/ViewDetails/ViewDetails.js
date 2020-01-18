@@ -13,11 +13,16 @@ export const ViewDetails = props => {
     props.close && props.close()
   }
 
+  if (show)
+    document.body.style.overflow = 'hidden'
+  else
+    document.body.style.overflow = 'auto'
+
   return (
     show &&
     <div className='viewDetailsModal'>
       <div className='viewDetailsModalContent'>
-        <div className='viewDetailsModalPadding'>
+        <div className='viewDetailsModalPadding '>
           <Button type='danger' position='right' onClick={closeModal}>X</Button>
           <Summary id={props.id} />
           <Ingredients id={props.id} />
