@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Cookbook/static/css/main.20f08dc0.chunk.css",
-    "main.js": "/Cookbook/static/js/main.09ce21ac.chunk.js",
-    "main.js.map": "/Cookbook/static/js/main.09ce21ac.chunk.js.map",
+    "main.css": "/Cookbook/static/css/main.ecee7d9a.chunk.css",
+    "main.js": "/Cookbook/static/js/main.565e7152.chunk.js",
+    "main.js.map": "/Cookbook/static/js/main.565e7152.chunk.js.map",
     "runtime-main.js": "/Cookbook/static/js/runtime-main.b3eb5c55.js",
     "runtime-main.js.map": "/Cookbook/static/js/runtime-main.b3eb5c55.js.map",
-    "static/js/2.01ed32ab.chunk.js": "/Cookbook/static/js/2.01ed32ab.chunk.js",
-    "static/js/2.01ed32ab.chunk.js.map": "/Cookbook/static/js/2.01ed32ab.chunk.js.map",
+    "static/js/2.79d435ee.chunk.js": "/Cookbook/static/js/2.79d435ee.chunk.js",
+    "static/js/2.79d435ee.chunk.js.map": "/Cookbook/static/js/2.79d435ee.chunk.js.map",
     "index.html": "/Cookbook/index.html",
-    "precache-manifest.b68da9185d64816b4d7b1b72d90db267.js": "/Cookbook/precache-manifest.b68da9185d64816b4d7b1b72d90db267.js",
+    "precache-manifest.c8ea2a0dedce13593645329acb00b5e1.js": "/Cookbook/precache-manifest.c8ea2a0dedce13593645329acb00b5e1.js",
     "service-worker.js": "/Cookbook/service-worker.js",
-    "static/css/main.20f08dc0.chunk.css.map": "/Cookbook/static/css/main.20f08dc0.chunk.css.map",
-    "static/js/2.01ed32ab.chunk.js.LICENSE": "/Cookbook/static/js/2.01ed32ab.chunk.js.LICENSE"
+    "static/css/main.ecee7d9a.chunk.css.map": "/Cookbook/static/css/main.ecee7d9a.chunk.css.map",
+    "static/js/2.79d435ee.chunk.js.LICENSE": "/Cookbook/static/js/2.79d435ee.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b3eb5c55.js",
-    "static/js/2.01ed32ab.chunk.js",
-    "static/css/main.20f08dc0.chunk.css",
-    "static/js/main.09ce21ac.chunk.js"
+    "static/js/2.79d435ee.chunk.js",
+    "static/css/main.ecee7d9a.chunk.css",
+    "static/js/main.565e7152.chunk.js"
   ]
 }
