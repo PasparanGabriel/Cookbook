@@ -20,10 +20,17 @@ export class Summary extends PureComponent {
       return <Loading />
 
     if (summary[id]) {
+      let result = ''
+      let summaryText = summary[id].summary
+      summaryText = summaryText.split('. ')
+
+      for (let i = 0; i < summaryText.length - 1; i++)
+        result += summaryText[i] + '. '
+
       return (
         <div>
           <h1 className='titleSummary'>{summary[id].title}</h1>
-          <p dangerouslySetInnerHTML={{ __html: summary[id].summary}} />
+          <p dangerouslySetInnerHTML={{ __html: result}} />
         </div>
       )
     } else {
