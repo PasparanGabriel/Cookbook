@@ -13,11 +13,13 @@ export class Summary extends PureComponent {
   render() {
     const { error, id, loading, summary } = this.props
 
-    if (error)
+    if (error) {
       return <Error err={error} />
+    }
 
-    if (loading)
+    if (loading) {
       return <Loading />
+    }
 
     if (summary[id]) {
       let result = ''
@@ -28,10 +30,10 @@ export class Summary extends PureComponent {
         result += summaryText[i] + '. '
 
       return (
-        <div>
+        <React.Fragment>
           <h1 className='titleSummary'>{summary[id].title}</h1>
           <p dangerouslySetInnerHTML={{ __html: result}} />
-        </div>
+        </React.Fragment>
       )
     } else {
       return null
@@ -40,5 +42,8 @@ export class Summary extends PureComponent {
 }
 
 Summary.propsType ={
-  id: PropTypes.number.isRequired
+  error: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  loading: PropTypes.bool.isRequired,
+  summary: PropTypes.string.isRequired
 }

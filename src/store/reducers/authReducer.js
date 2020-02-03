@@ -1,6 +1,6 @@
 const initState = {
-  authErrorSignIn: null,
-  authErrorSignUp: null
+  authErrorSignIn: '',
+  authErrorSignUp: ''
 }
 
 export const authReducer = (state = initState, action) => {
@@ -14,7 +14,7 @@ export const authReducer = (state = initState, action) => {
     case 'SIGNIN_SUCCESS':
       return {
         ...state,
-        authErrorSignIn: null
+        authErrorSignIn: ''
       }
 
     case 'SIGNOUT_SUCCESS':
@@ -29,7 +29,7 @@ export const authReducer = (state = initState, action) => {
     case 'SIGNUP_SUCCESS':
       return {
         ...state,
-        authErrorSignUp: null
+        authErrorSignUp: ''
       }
 
     default:

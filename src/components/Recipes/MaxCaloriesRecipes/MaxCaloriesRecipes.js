@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { Category } from '../../Category'
 import { Error } from '../../../ui/Error'
 import { Loading } from '../../../ui/Loading'
@@ -20,21 +21,29 @@ export class MaxCaloriesRecipes extends PureComponent {
   render() {
     const { error, loading, maxCaloriesRecipes } = this.props
 
-    if (error)
+    if (error) {
       return <Error err={error} />
+    }
 
-    if (loading)
+    if (loading) {
       return <Loading />
+    }
 
     if (maxCaloriesRecipes) {
       return (
-        <div>
+        <React.Fragment>
           <Category baseUri='' category={maxCaloriesRecipes} openModal={this.openModal} title='Under 500 calories' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
-        </div>
+        </React.Fragment>
       )
     } else { 
       return null
     }
   }
+}
+
+MaxCaloriesRecipes.propTypes = {
+  error: PropTypes.string.isRequired,
+  loading: PropTypes.bool.isRequired,
+  maxCaloriesRecipes: PropTypes.array.isRequired
 }

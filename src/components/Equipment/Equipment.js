@@ -15,15 +15,17 @@ export class Equipment extends PureComponent {
     const { equipment, error, id, loading } = this.props
     let number = 0
 
-    if (error)
+    if (error) {
       return <Error err={error} />
+    }
 
-    if (loading)
+    if (loading) {
       return <Loading />
+    }
 
     if (equipment[id]) {
       return (
-        <div>
+        <React.Fragment>
           { !!equipment[id].length && <h1 className='titleEquipment'>Equipment</h1> }
           { equipment[id] && equipment[id].map(item =>
               <div className='containerEquipment' key={number++}>
@@ -40,7 +42,7 @@ export class Equipment extends PureComponent {
               </div>
             )
           }
-        </div>
+        </React.Fragment>
       )
     } else {
       return null
@@ -48,6 +50,9 @@ export class Equipment extends PureComponent {
   }
 }
 
-Equipment.propsType ={
-  id: PropTypes.number.isRequired
+Equipment.propsType = {
+  equipment: PropTypes.array.isRequired,
+  error: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  loading: PropTypes.bool.isRequired
 }

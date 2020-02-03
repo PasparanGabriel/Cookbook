@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { Category } from '../../Category'
 import { Error } from '../../../ui/Error'
 import { Loading } from '../../../ui/Loading'
@@ -18,23 +19,32 @@ export class PorkRecipes extends PureComponent {
   }
 
   render() {
-    const { baseUri, error, loading,porkRecipes } = this.props
+    const { baseUri, error, loading, porkRecipes } = this.props
 
-    if (error)
+    if (error) {
       return <Error err={error} />
+    }
 
-    if (loading)
+    if (loading) {
       return <Loading />
+    }
 
     if (porkRecipes) {
       return (
-        <div>
+        <React.Fragment>
           <Category baseUri={baseUri} category={porkRecipes} openModal={this.openModal} title='Pork' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
-        </div>
+        </React.Fragment>
       )
     } else {
       return null
     }
   }
+}
+
+PorkRecipes.propTypes = {
+  baseUri: PropTypes.string.isRequired,
+  error: PropTypes.string.isRequired,
+  loading: PropTypes.bool.isRequired,
+  porkRecipes: PropTypes.array.isRequired
 }

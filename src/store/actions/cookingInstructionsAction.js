@@ -3,6 +3,7 @@ import { stepsRecipesById } from '../../config/urls'
 
 export const cookingInstructionsAction = id => {
   const stepsRecipesByIdUrl = stepsRecipesById(id) + apiKey
+  
   return dispatch => {
     dispatch({ type: 'FETCH_COOKINGINSTRUCTIONS_LOADING' })
     fetch(stepsRecipesByIdUrl)

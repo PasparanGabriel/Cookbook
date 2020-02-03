@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './ContainerCentral.css'
 
 export const ContainerCentral = props => (
@@ -6,3 +7,7 @@ export const ContainerCentral = props => (
     {props.children}
   </div>
 )
+
+ContainerCentral.prototype = {
+  children: PropTypes.element.isRequired
+}

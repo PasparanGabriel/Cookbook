@@ -3,6 +3,7 @@ import { equipmentRecipesById } from '../../config/urls'
 
 export const equipmentAction = id => {
   const equipmentRecipesByIdUrl = equipmentRecipesById(id) + apiKey
+  
   return dispatch => {
     dispatch({ type: 'FETCH_EQUIPMENT_LOADING' })
     fetch(equipmentRecipesByIdUrl)

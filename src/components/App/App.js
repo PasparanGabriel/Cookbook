@@ -5,7 +5,7 @@ import { SignIn } from '../Auth/SignIn'
 import { SignUp } from '../Auth/SignUp'
 import { Navbar } from '../Navbar'
 
-const App = () => (
+export const App = () => (
   <Router>
     <Navbar />
 
@@ -16,5 +16,3 @@ const App = () => (
     </Switch>
   </Router>
 )
-
-export { App }

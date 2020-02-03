@@ -20,7 +20,7 @@ export const Category = props => {
               </div>
 
               <hr className='lineCategory'/>
-              
+
               <div className='viewDetails'>
                 <Button
                   borderRadius

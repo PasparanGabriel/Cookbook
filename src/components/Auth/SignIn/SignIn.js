@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { Redirect } from 'react-router-dom'
 import { ContainerCentral } from '../../ContainerCentral'
 import { Button } from '../../../ui/Button'
@@ -28,9 +29,9 @@ export class SignIn extends PureComponent {
 
   handleSubmit = event => {
     event.preventDefault()
-    
+
     const { user } = this.state
-        
+
     if (user.email && user.password) {
       this.props.signIn(user)
     } else {
@@ -43,11 +44,12 @@ export class SignIn extends PureComponent {
   }
 
   render() {
-    const { user, inputValidation } = this.state
     const { auth, authErrorSignIn } = this.props
+    const { user, inputValidation } = this.state
 
-    if (auth.uid)
+    if (auth.uid) {
       return <Redirect to='/' />
+    }
 
     return (
       <ContainerCentral>
@@ -64,7 +66,7 @@ export class SignIn extends PureComponent {
           >
             {!inputValidation && !user.email}
           </Input>
-          
+
           <Input
             type='password'
             name='password'
@@ -86,4 +88,9 @@ export class SignIn extends PureComponent {
       </ContainerCentral>
     )
   }
+}
+
+SignIn.propTypes = {
+  auth: PropTypes.object.isRequired,
+  authErrorSignIn: PropTypes.string.isRequired
 }

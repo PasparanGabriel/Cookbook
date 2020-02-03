@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Button } from '../../ui/Button'
 import { CookingInstructions } from '../CookingInstructions'
 import { Equipment } from '../Equipment'
@@ -7,16 +8,17 @@ import { Summary }from '../Summary'
 import './ViewDetails.css'
 
 export const ViewDetails = props => {
-  const { show } = props
+  const { id, show } = props
 
   const closeModal = () => {
     props.close && props.close()
   }
 
-  if (show)
+  if (show) {
     document.body.style.overflow = 'hidden'
-  else
+  } else {
     document.body.style.overflow = 'auto'
+  }
 
   return (
     show &&
@@ -24,12 +26,18 @@ export const ViewDetails = props => {
       <div className='contentViewDetails'>
         <div className='paddingViewDetails'>
           <Button type='danger' position='right' onClick={closeModal}>X</Button>
-          <Summary id={props.id} />
-          <Ingredients id={props.id} />
-          <Equipment id={props.id} />
-          <CookingInstructions id={props.id} />
+          <Summary id={id} />
+          <Ingredients id={id} />
+          <Equipment id={id} />
+          <CookingInstructions id={id} />
         </div>
       </div>
     </div>
   )
+}
+
+ViewDetails.propTypes = {
+  close: PropTypes.func.isRequired,
+  id: PropTypes.number,
+  show: PropTypes.bool.isRequired
 }

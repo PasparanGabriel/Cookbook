@@ -13,15 +13,17 @@ export class CookingInstructions extends PureComponent {
   render() {
     const { cookingInstructions, error, id, loading } = this.props
 
-    if (error)
+    if (error) {
       return <Error err={error} />
+    }
 
-    if (loading)
+    if (loading) {
       return <Loading />
+    }
 
     if (cookingInstructions[id]) {
       return (
-        <div>
+        <React.Fragment>
           { !!cookingInstructions[id] && <h1 className='textCookingInstruction'>Cooking Instructions</h1> }
           { cookingInstructions[id] && cookingInstructions[id].map(cookingInstruction =>
               <div className='containerCookingInstruction' key={cookingInstruction.number}>
@@ -30,7 +32,7 @@ export class CookingInstructions extends PureComponent {
               </div>
             )
           }
-        </div>
+        </React.Fragment>
       )
     } else {
       return null
@@ -39,5 +41,8 @@ export class CookingInstructions extends PureComponent {
 }
 
 CookingInstructions.propsType = {
-  id: PropTypes.number.isRequired
+  cookingInstructions: PropTypes.array.isRequired,
+  error: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  loading: PropTypes.bool.isRequired
 }

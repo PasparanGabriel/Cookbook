@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Image } from '../../ui/Image'
 import { SignOut } from '../Auth/SignOut'
@@ -30,4 +31,8 @@ export const Navbar = props => {
       </nav>
     </div>
   )
+}
+
+Navbar.propTypes = {
+  auth: PropTypes.object.isRequired
 }

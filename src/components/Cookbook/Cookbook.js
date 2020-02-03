@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Redirect } from 'react-router-dom'
 import { BeefRecipes } from '../Recipes/BeefRecipes'
 import { ChickenRecipes } from '../Recipes/ChickenRecipes'
@@ -12,8 +13,9 @@ import './Cookbook.css'
 export const Cookbook = props => {
   const { auth } = props
   
-  if (!auth.uid)
+  if (!auth.uid) {
     return <Redirect to='/sign-in' /> 
+  }
 
   return (
     <div className='containerCookbook'>
@@ -26,4 +28,8 @@ export const Cookbook = props => {
       <MaxCaloriesRecipes />
     </div>
   )
+}
+
+Cookbook.propTypes = {
+  auth: PropTypes.object.isRequired
 }

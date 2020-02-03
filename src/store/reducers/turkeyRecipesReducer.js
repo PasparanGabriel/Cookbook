@@ -1,6 +1,6 @@
 const initialState = {
   baseUri: '',
-  error: null,
+  error: '',
   loading: false,
   results: []
 }

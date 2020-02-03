@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Image } from '../Image'
 import hide from '../../image/hide.png'
 import view from '../../image/view.png'
@@ -51,3 +52,12 @@ const ViewPassword = () => (
     <Image src={view} alt='view' id='imgPassword' />
   </span>
 )
+
+Input.propTypes = {
+  children: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired
+}
