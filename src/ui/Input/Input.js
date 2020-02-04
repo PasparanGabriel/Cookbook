@@ -28,6 +28,12 @@ export const Input = props => {
   )
 }
 
+const ViewPassword = () => (
+  <span className='viewPassword' onClick={ChangeType}>
+    <Image src={view} alt='view' id='imgPassword' />
+  </span>
+)
+
 const ChangeType = () => {
   const name = document.getElementById('password')
   const img = document.getElementById('imgPassword')
@@ -46,12 +52,6 @@ const ChangeType = () => {
     )
   }
 }
-
-const ViewPassword = () => (
-  <span className='viewPassword' onClick={ChangeType}>
-    <Image src={view} alt='view' id='imgPassword' />
-  </span>
-)
 
 Input.propTypes = {
   children: PropTypes.bool.isRequired,
