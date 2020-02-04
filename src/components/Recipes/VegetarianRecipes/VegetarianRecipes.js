@@ -29,7 +29,7 @@ export class VegetarianRecipes extends PureComponent {
       return <Loading />
     }
 
-    if (vegetarianRecipes) {
+    if (vegetarianRecipes && vegetarianRecipes.length) {
       return (
         <React.Fragment>
           <Category baseUri={baseUri} category={vegetarianRecipes} openModal={this.openModal} title='Vegetarian' />

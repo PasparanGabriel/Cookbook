@@ -29,7 +29,7 @@ export class MaxCaloriesRecipes extends PureComponent {
       return <Loading />
     }
 
-    if (maxCaloriesRecipes) {
+    if (maxCaloriesRecipes && maxCaloriesRecipes.length) {
       return (
         <React.Fragment>
           <Category baseUri='' category={maxCaloriesRecipes} openModal={this.openModal} title='Under 500 calories' />

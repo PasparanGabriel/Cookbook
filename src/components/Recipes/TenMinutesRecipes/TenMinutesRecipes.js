@@ -29,7 +29,7 @@ export class TenMinutesRecipes extends PureComponent {
       return <Loading />
     }
 
-    if (tenMinutesRecipes) {
+    if (tenMinutesRecipes && tenMinutesRecipes.length) {
       return (
         <React.Fragment>
           <Category baseUri='' category={tenMinutesRecipes} openModal={this.openModal} title='10 Minutes' />

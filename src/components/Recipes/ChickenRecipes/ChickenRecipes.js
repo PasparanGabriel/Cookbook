@@ -29,7 +29,7 @@ export class ChickenRecipes extends PureComponent {
       return <Loading />
     }
 
-    if (chickenRecipes) {
+    if (chickenRecipes && chickenRecipes.length) {
       return (
         <React.Fragment>
           <Category baseUri={baseUri} category={chickenRecipes} openModal={this.openModal} title='Chicken'/>
