@@ -58,8 +58,8 @@ export class Ingredients extends PureComponent {
 }
 
 Ingredients.propsType = {
-  ingredientsRecipes: PropTypes.array.isRequired,
   error: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  ingredientsRecipes: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired
 }
