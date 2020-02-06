@@ -41,7 +41,7 @@ export class Summary extends PureComponent {
   }
 }
 
-Summary.propsType ={
+Summary.propsType = {
   error: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   loading: PropTypes.bool.isRequired,
