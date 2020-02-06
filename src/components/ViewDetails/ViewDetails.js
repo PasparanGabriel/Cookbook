@@ -16,24 +16,25 @@ export const ViewDetails = props => {
 
   if (show) {
     document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = 'auto'
-  }
 
-  return (
-    show &&
-    <div className='modalViewDetails'>
-      <div className='contentViewDetails'>
-        <div className='paddingViewDetails'>
-          <Button type='danger' position='right' onClick={closeModal}>X</Button>
-          <Summary id={id} />
-          <Ingredients id={id} />
-          <Equipment id={id} />
-          <CookingInstructions id={id} />
+    return (
+      <div className='modalViewDetails'>
+        <div className='contentViewDetails'>
+          <div className='paddingViewDetails'>
+            <Button type='danger' position='right' onClick={closeModal}>X</Button>
+            <Summary id={id} />
+            <Ingredients id={id} />
+            <Equipment id={id} />
+            <CookingInstructions id={id} />
+          </div>
         </div>
       </div>
-    </div>
-  )
+    ) 
+  } else {
+    document.body.style.overflow = 'auto'
+
+    return null
+  }
 }
 
 ViewDetails.propTypes = {
