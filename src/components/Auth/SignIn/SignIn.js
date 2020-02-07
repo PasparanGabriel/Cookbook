@@ -54,7 +54,7 @@ export class SignIn extends PureComponent {
     return (
       <ContainerCentral>
         <h1 className='textSignIn'>Sign In</h1>
-        { authErrorSignIn && <h1 className='failedSignIn'>{authErrorSignIn}</h1> }
+        { authErrorSignIn && <h2 className='failedSignIn'>{authErrorSignIn}</h2> }
 
         <form>        
           <Input
