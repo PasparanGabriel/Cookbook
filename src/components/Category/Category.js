@@ -11,9 +11,9 @@ export const Category = props => {
 
   return (
     <div className='containerCategory'>
-      <h1 className='titleCategory'>{title}</h1>
+      {category.length && <h1 className='titleCategory'>{title}</h1>}
       <div className='rowCategory'>
-        { category && category.map(item =>
+        { category.length && category.map(item =>
             <div className='colCategory' key={item.id}>
               <div className='imgCategory'>
                 <Image src={baseUri + item.image} alt={item.image} type='category' />
