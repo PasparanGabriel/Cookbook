@@ -56,7 +56,7 @@ export class SignUp extends PureComponent {
     return (
       <ContainerCentral>
         <h1 className='textSignUp'>Sign Up</h1>
-        { authErrorSignUp && <h1 className='failedSignUp'>{authErrorSignUp}</h1> }
+        { authErrorSignUp && <h2 className='failedSignUp'>{authErrorSignUp}</h2> }
 
         <form>
           <Input
@@ -99,7 +99,7 @@ export class SignUp extends PureComponent {
             {!inputValidation && !user.password}
           </Input>
 
-          <Button type='success' size='xLarge' onClick={this.handleSubmit}>Sign Up</Button>
+          <Button type='success' size='xLarge' onClick={this.handleSubmit}>Sign up</Button>
         </form>
 
         <div className='orContainerSignUp'>
