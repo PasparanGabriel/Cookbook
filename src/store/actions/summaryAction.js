@@ -1,13 +1,9 @@
-import { apiKey } from '../../config/apiKey'
 import { summaryRecipesById } from '../../config/urls'
 
-
 export const summaryAction = id => {
-  const summaryRecipesByIdUrl = summaryRecipesById(id) + apiKey
-  
   return dispatch => {
     dispatch({ type: 'FETCH_SUMMARY_LOADING' })
-    fetch(summaryRecipesByIdUrl)
+    fetch(summaryRecipesById(id))
     .then(resp => resp.json())
     .then(resp => {
       if (resp.error) {

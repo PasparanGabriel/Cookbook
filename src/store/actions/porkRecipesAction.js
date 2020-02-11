@@ -1,12 +1,9 @@
-import { apiKey } from '../../config/apiKey'
 import { porkRecipes } from '../../config/urls'
-
-const porkRecipesUrl = porkRecipes + apiKey
 
 export const porkRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_PORKRECIPES_LOADING' })
-    fetch(porkRecipesUrl)
+    fetch(porkRecipes)
     .then(resp => resp.json())
     .then(resp => {
       if (resp.error) {

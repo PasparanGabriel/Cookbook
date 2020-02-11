@@ -1,13 +1,10 @@
-import { apiKey } from '../../config/apiKey'
 import { ingredientsRecipesById } from '../../config/urls'
 
 
 export const ingredientsRecipesAction = id => {
-  const ingredientsRecipesByIdUrl = ingredientsRecipesById(id) + apiKey
-  
   return dispatch => {
     dispatch({ type: 'FETCH_INGREDIENTSRECIPES_LOADING' })
-    fetch(ingredientsRecipesByIdUrl)
+    fetch(ingredientsRecipesById(id))
     .then(resp => resp.json())
     .then(resp => {
       if (resp.error) {
