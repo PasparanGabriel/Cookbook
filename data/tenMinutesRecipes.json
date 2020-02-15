@@ -1,0 +1,54 @@
+{
+  "results": [ 
+    { 
+      "id":818941,
+      "title":"Avocado Toast with Eggs, Spinach, and Tomatoes",
+      "image":"https://spoonacular.com/recipeImages/818941-312x231.jpg"
+    },
+    { 
+      "id":689502,
+      "title":"Melt In Your Mouth Kale Salad",
+      "image":"https://spoonacular.com/recipeImages/689502-312x231.jpg"
+    },
+    { 
+      "id":837136,
+      "title":"Kale Pineapple Smoothie",
+      "image":"https://spoonacular.com/recipeImages/837136-312x231.jpg"
+    },
+    { 
+      "id":801710,
+      "title":"Matcha Green Tea and Pineapple Smoothie",
+      "image":"https://spoonacular.com/recipeImages/801710-312x231.jpg"
+    },
+    { 
+      "id":695486,
+      "title":"Green Smoothie",
+      "image":"https://spoonacular.com/recipeImages/695486-312x231.jpg"
+    },
+    { 
+      "id":812966,
+      "title":"Low Carb Frosty",
+      "image":"https://spoonacular.com/recipeImages/812966-312x231.jpg"
+    },
+    { 
+      "id":578102,
+      "title":"Avocado chickpea salad (and a giveaway!)",
+      "image":"https://spoonacular.com/recipeImages/578102-312x231.jpg"
+    },
+    { 
+      "id":696698,
+      "title":"Tuscan-Style Tuna Salad",
+      "image":"https://spoonacular.com/recipeImages/696698-312x231.jpg"
+    },
+    { 
+      "id":613079,
+      "title":"Smashed White Bean and Avocado Sandwich",
+      "image":"https://spoonacular.com/recipeImages/613079-312x231.jpg"
+    },
+    { 
+      "id":995889,
+      "title":"Low Calorie Peanut Butter Banana Spinach Smoothie",
+      "image":"https://spoonacular.com/recipeImages/995889-312x231.jpg"
+    }
+  ]
+}

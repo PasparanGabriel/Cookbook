@@ -1,0 +1,333 @@
+{
+  "results": [ 
+    {
+      "id":521510,
+      "title":"Beef salpicao",
+      "readyInMinutes":45,
+      "servings":5,
+      "image":"https://spoonacular.com/recipeImages/Beef-salpicao-521510.jpg"
+    },
+    { 
+      "id":677595,
+      "title":"Beef Roast",
+      "readyInMinutes":45,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Beef-Roast-677595.jpg"
+    },
+    { 
+      "id":37032,
+      "title":"Orange Beef Pasta",
+      "readyInMinutes":20,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/orange-beef-pasta-37032.jpg"
+    },
+    { 
+      "id":119363,
+      "title":"Beef Curry Pillows",
+      "readyInMinutes":50,
+      "servings":18,
+      "image":"https://spoonacular.com/recipeImages/beef-curry-pillows-2-119363.jpg"
+    },
+    { 
+      "id":232160,
+      "title":"Chunky Beef Chili",
+      "readyInMinutes":130,
+      "servings":25,
+      "image":"https://spoonacular.com/recipeImages/chunky-beef-chili-232160.jpg"
+    },
+    { 
+      "id":247003,
+      "title":"How to Make Beef Stock",
+      "readyInMinutes":45,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/How-to-Make-Beef-Stock-247003.jpg"
+    },
+    { 
+      "id":271053,
+      "title":"Beef Enchiladas OlÃ©",
+      "readyInMinutes":26,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/beef-enchiladas-ol-271053.jpg"
+    },
+    { 
+      "id":303166,
+      "title":"Beef with Snow Peas",
+      "readyInMinutes":16,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/beef-with-snow-peas-303166.jpeg"
+    },
+    { 
+      "id":328339,
+      "title":"Beef with Sauce Bearnaise",
+      "readyInMinutes":16,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/beef-with-sauce-bearnaise-328339.jpeg"
+    },
+    { 
+      "id":385176,
+      "title":"Ground Beef 'n' Biscuits",
+      "readyInMinutes":40,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Ground-Beef-n-Biscuits-385176.jpg"
+    },
+    { 
+      "id":375712,
+      "title":"Marinated Beef Tenderloins",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Marinated-Beef-Tenderloins-375712.jpg"
+    },
+    { 
+      "id":390929,
+      "title":"Southwest Beef Pie",
+      "readyInMinutes":30,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Southwest-Beef-Pie-390929.jpg"
+    },
+    { 
+      "id":395196,
+      "title":"Vegetable Beef Soup",
+      "readyInMinutes":160,
+      "servings":20,
+      "image":"https://spoonacular.com/recipeImages/Vegetable-Beef-Soup-395196.jpg"
+    },
+    { 
+      "id":462320,
+      "title":"Potato Beef Lasagna",
+      "readyInMinutes":90,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Potato-Beef-Lasagna-462320.jpg"
+    },
+    { 
+      "id":473634,
+      "title":"Roast Beef Panini",
+      "readyInMinutes":15,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Roast-Beef-Panini-473634.jpg"
+    },
+    { 
+      "id":535850,
+      "title":"Korean Beef Bowl",
+      "readyInMinutes":15,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Korean-Beef-Bowl-535850.jpg"
+    },
+    { 
+      "id":558018,
+      "title":"Easy Beef Enchiladas",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Easy-Beef-Enchiladas-558018.jpg"
+    },
+    { 
+      "id":591714,
+      "title":"Shredded Taco Beef",
+      "readyInMinutes":490,
+      "servings":12,
+      "image":"https://spoonacular.com/recipeImages/Shredded-Taco-Beef-591714.jpg"
+    },
+    { 
+      "id":648048,
+      "title":"Italian Beef Braciole",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Italian-Beef-Braciole-648048.jpg"
+    },
+    { 
+      "id":699367,
+      "title":"Beef and Bean Soup",
+      "readyInMinutes":150,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/beef-and-bean-soup-699367.jpg"
+    },
+    { 
+      "id":743564,
+      "title":"Beef-and-Bacon Meatballs",
+      "readyInMinutes":120,
+      "servings":48,
+      "image":"https://spoonacular.com/recipeImages/beef-and-bacon-meatballs-743564.jpeg"
+    },
+    { 
+      "id":1005303,
+      "title":"Healthy Beef and Broccoli",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/healthy-beef-and-broccoli-1005303.jpg"
+    },
+    { 
+      "id":1065027,
+      "title":"Beef and Barley Stew",
+      "readyInMinutes":80,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/beef-and-barley-stew-1065027.jpg"
+    },
+    { 
+      "id":1070235,
+      "title":"Vegetable Beef Soup",
+      "readyInMinutes":185,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/vegetable-beef-soup-1070235.jpg"
+    },
+    { 
+      "id":1077838,
+      "title":"Classic Beef Stroganoff",
+      "readyInMinutes":25,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/classic-beef-stroganoff-1077838.jpg"
+    },
+    { 
+      "id":1110657,
+      "title":"Beef and Kale Skillet",
+      "readyInMinutes":40,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/beef-and-kale-skillet-1110657.jpg"
+    },
+    { 
+      "id":117128,
+      "title":"Jerk Beef on Plantain Chips",
+      "readyInMinutes":25,
+      "servings":24,
+      "image":"https://spoonacular.com/recipeImages/jerk-beef-on-plantain-chips-2-117128.png"
+    },
+    { 
+      "id":180456,
+      "title":"Curry Beef Samosa Pie",
+      "readyInMinutes":55,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Curry-Beef-Samosa-Pie-180456.jpg"
+    },
+    { 
+      "id":179087,
+      "title":"Stir-Fry Beef and Broccoli",
+      "readyInMinutes":25,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/stir-fry-beef-and-broccoli-179087.jpg"
+    },
+    { 
+      "id":430314,
+      "title":"Roast Beef with Onion au Jus",
+      "readyInMinutes":195,
+      "servings":20,
+      "image":"https://spoonacular.com/recipeImages/Roast-Beef-with-Onion-au-Jus-430314.jpg"
+    },
+    { 
+      "id":473805,
+      "title":"Stir Fry Beef Salad",
+      "readyInMinutes":15,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Stir-Fry-Beef-Salad-473805.jpg"
+    },
+    { 
+      "id":485472,
+      "title":"Korean Kalbi Beef Ribs",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Korean-Kalbi-Beef-Ribs-485472.jpg"
+    },
+    { 
+      "id":492252,
+      "title":"Red Wine Beef Stew",
+      "readyInMinutes":120,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Red-Wine-Beef-Stew-492252.jpg"
+    },
+    { 
+      "id":521125,
+      "title":"Irish-style beef stew",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Irish-style-beef-stew-521125.jpg"
+    },
+    { 
+      "id":577491,
+      "title":"Vegetable, Beef & Barley Soup",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Vegetable--Beef---Barley-Soup-577491.jpg"
+    },
+    { 
+      "id":1111502,
+      "title":"Moroccan Inspired Beef Kebabs",
+      "readyInMinutes":165,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/moroccan-inspired-beef-kebabs-1111502.jpg"
+    },
+    { 
+      "id":1133135,
+      "title":"Skillet Ground Beef and Biscuits",
+      "readyInMinutes":40,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/skillet-ground-beef-and-biscuits-1133135.jpg"
+    },
+    { 
+      "id":42550,
+      "title":"Beef Tenderloin with Garlic Horseradish Cream",
+      "readyInMinutes":120,
+      "servings":10,
+      "image":"https://spoonacular.com/recipeImages/beef-tenderloin-with-garlic-horseradish-cream-2-42550.jpg"
+    },
+    { 
+      "id":93099,
+      "title":"Crock Pot Corned Beef and Cabbage",
+      "readyInMinutes":610,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/crock-pot-corned-beef-and-cabbage-2-93099.jpg"
+    },
+    { 
+      "id":111268,
+      "title":"Ginger Teriyaki Beef Stir-Fry",
+      "readyInMinutes":35,
+      "servings":3,
+      "image":"https://spoonacular.com/recipeImages/ginger-teriyaki-beef-stir-fry-2-111268.jpg"
+    },
+    { 
+      "id":159122,
+      "title":"Green Bean and Beef Pasta Supper",
+      "readyInMinutes":30,
+      "servings":5,
+      "image":"https://spoonacular.com/recipeImages/Green-Bean-and-Beef-Pasta-Supper-159122.jpg"
+    },
+    { 
+      "id":175772,
+      "title":"Slow-Cooker Beef-Vegetable Chili",
+      "readyInMinutes":560,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/slow-cooker-beef-vegetable-chili-175772.jpg"
+    },
+    { 
+      "id":225209,
+      "title":"Roasted Tomato-Beef Goulash with Caraway",
+      "readyInMinutes":45,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/roasted-tomato-beef-goulash-with-caraway-225209.jpg"
+    },
+    { 
+      "id":267834,
+      "title":"Chilean Beef and Purple Potato Salad",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/chilean-beef-and-purple-potato-salad-267834.jpg"
+    },
+    { 
+      "id":489525,
+      "title":"Slow Cooker Italian Beef Sandwiches",
+      "readyInMinutes":485,
+      "servings":10,
+      "image":"https://spoonacular.com/recipeImages/Slow-Cooker-Italian-Beef-Sandwiches-489525.jpg"
+    },
+    { 
+      "id":507672,
+      "title":"Braised Beef with Mushroom and Cabernet Sauce",
+      "readyInMinutes":195,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Braised-Beef-with-Mushroom-and-Cabernet-Sauce-507672.jpg"
+    },
+    { 
+      "id":609818,
+      "title":"Creamy Cauliflower and Ground Beef Skillet",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/creamy-cauliflower-and-ground-beef-skillet-609818.png"
+    }
+  ]
+}

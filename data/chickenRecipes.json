@@ -1,0 +1,312 @@
+{
+  "results": [ 
+    { 
+      "id":485365,
+      "title":"Chicken Spinoccoli – Breaded Stuffed Chicken Breast With Spinach, Broccoli and Cheese",
+      "readyInMinutes":65,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-spinoccoli-breaded-stuffed-chicken-breast-with-spinach-broccoli-and-cheese-485365.jpg"
+    },
+    { 
+      "id":107878,
+      "title":"Garlic Chicken",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/garlic-chicken-2-107878.png"
+    },
+    { 
+      "id":110434,
+      "title":"Chicken Divan",
+      "readyInMinutes":50,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/chicken-divan-110434.jpg"
+    },
+    { 
+      "id":129383,
+      "title":"Chicken With Cranberries",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-with-cranberries-2-129383.jpg"
+    },
+    { 
+      "id":136858,
+      "title":"Chicken Saltimbocca",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-saltimbocca-2-136858.png"
+    },
+    { 
+      "id":143552,
+      "title":"Polynesian Chicken",
+      "readyInMinutes":125,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/polynesian-chicken-2-143552.jpg"
+    },
+    { 
+      "id":389293,
+      "title":"Barbecued Chicken",
+      "readyInMinutes":75,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Barbecued-Chicken-389293.jpg"
+    },
+    { 
+      "id":412049,
+      "title":"Chicken in a Cloud",
+      "readyInMinutes":55,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Chicken-in-a-Cloud-412049.jpg"
+    },
+    { 
+      "id":412156,
+      "title":"Chicken Scampi",
+      "readyInMinutes":25,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Chicken-Scampi-412156.jpg"
+    },
+    { 
+      "id":577534,
+      "title":"Chicken Parmesan",
+      "readyInMinutes":75,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Chicken-Parmesan-577534.jpg"
+    },
+    { 
+      "id":696255,
+      "title":"Chicken Shawarma for Two",
+      "readyInMinutes":45,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/chicken-shawarma-for-two-696255.jpg"
+    },
+    { 
+      "id":1100220,
+      "title":"Best Ever Chicken Fajitas",
+      "readyInMinutes":150,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/best-ever-chicken-fajitas-1100220.jpg"
+    },
+    { 
+      "id":892046,
+      "title":"Chicken Souvlaki",
+      "readyInMinutes":20,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/chicken-souvlaki-892046.jpg"
+    },
+    { 
+      "id":12394,
+      "title":"Buffalo Chicken Chowder",
+      "readyInMinutes":35,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/buffalo_chicken_chowder-12394.jpg"
+    },
+    { 
+      "id":68985,
+      "title":"Spicy Chicken Empanadas",
+      "readyInMinutes":64,
+      "servings":24,
+      "image":"https://spoonacular.com/recipeImages/spicy-chicken-empanadas-2-68985.jpg"
+    },
+    { 
+      "id":84512,
+      "title":"Salsa Butter Chicken",
+      "readyInMinutes":25,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/salsa-butter-chicken-2-84512.jpg"
+    },
+    { 
+      "id":94960,
+      "title":"Classic Chicken Soup",
+      "readyInMinutes":15,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/classic-chicken-soup-94960.jpg"
+    },
+    { 
+      "id":95516,
+      "title":"Cheesy Chicken Spaghetti",
+      "readyInMinutes":45,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/cheesy-chicken-spaghetti-2-95516.jpg"
+    },
+    { 
+      "id":95837,
+      "title":"Chipotle Chicken Salad",
+      "readyInMinutes":20,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/chipotle-chicken-salad-2-95837.jpg"
+    },
+    { 
+      "id":112904,
+      "title":"Oriental Chicken Buns",
+      "readyInMinutes":40,
+      "servings":5,
+      "image":"https://spoonacular.com/recipeImages/oriental-chicken-buns-2-112904.jpg"
+    },
+    { 
+      "id":114925,
+      "title":"Chicken & Asparagus Pasta",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-amp-asparagus-pasta-2-114925.png"
+    },
+    { 
+      "id":118914,
+      "title":"Yummy Chicken Marsala",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/yummy-chicken-marsala-2-118914.jpg"
+    },
+    { 
+      "id":127950,
+      "title":"Coconut Chicken Soup",
+      "readyInMinutes":15,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/coconut-chicken-soup-2-127950.jpg"
+    },
+    { 
+      "id":128827,
+      "title":"3 Ingredient Cranberry Chicken",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/3-ingredient-cranberry-chicken-2-128827.jpg"
+    },
+    { 
+      "id":136644,
+      "title":"Stuffed Mexican Chicken",
+      "readyInMinutes":55,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/stuffed-mexican-chicken-2-136644.jpg"
+    },
+    { 
+      "id":137125,
+      "title":"Barbecue Chicken Bundles",
+      "readyInMinutes":75,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/barbecue-chicken-bundles-2-137125.jpg"
+    },
+    { 
+      "id":145445,
+      "title":"Chicken Tortilla Soup",
+      "readyInMinutes":35,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken_tortilla_soup-145445.jpg"
+    },
+    { 
+      "id":169313,
+      "title":"Grandma’s Chicken Casserole",
+      "readyInMinutes":45,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/grandmas-chicken-casserole-169313.jpg"
+    },
+    { 
+      "id":203394,
+      "title":"Chicken Thighs Paprika",
+      "readyInMinutes":70,
+      "servings":10,
+      "image":"https://spoonacular.com/recipeImages/chicken-thighs-paprika-203394.jpg"
+    },
+    { 
+      "id":214558,
+      "title":"Baked country chicken",
+      "readyInMinutes":75,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Baked-country-chicken-214558.jpg"
+    },
+    { 
+      "id":222001,
+      "title":"Satay chicken pieces",
+      "readyInMinutes":180,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Satay-chicken-pieces-222001.jpg"
+    },
+    { 
+      "id":265043,
+      "title":"Easy Chicken Parmesan",
+      "readyInMinutes":45,
+      "servings":45,
+      "image":"https://spoonacular.com/recipeImages/easy-chicken-parmesan-265043.jpg"
+    },
+    { 
+      "id":272165,
+      "title":"Chicken Fajita Salad",
+      "readyInMinutes":40,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-fajita-salad-272165.jpg"
+    },
+    { 
+      "id":272860,
+      "title":"Tomato-Chicken Risotto",
+      "readyInMinutes":50,
+      "servings":50,
+      "image":"https://spoonacular.com/recipeImages/tomato-chicken-risotto-272860.jpg"
+    },
+    { 
+      "id":275170,
+      "title":"Mediterranean Mozza-Chicken",
+      "readyInMinutes":28,
+      "servings":28,
+      "image":"https://spoonacular.com/recipeImages/mediterranean-mozza-chicken-275170.jpg"
+    },
+    { 
+      "id":275758,
+      "title":"Easy Chicken Soup",
+      "readyInMinutes":30,
+      "servings":30,
+      "image":"https://spoonacular.com/recipeImages/easy-chicken-soup-275758.jpg"
+    },
+    { 
+      "id":278731,
+      "title":"Red Chilaquiles with Chicken",
+      "readyInMinutes":35,
+      "servings":35,
+      "image":"https://spoonacular.com/recipeImages/red-chilaquiles-with-chicken-278731.jpg"
+    },
+    { 
+      "id":329376,
+      "title":"Chicken With Pickle Sauce",
+      "readyInMinutes":35,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-with-pickle-sauce-329376.jpeg"
+    },
+    { 
+      "id":376696,
+      "title":"Chicken Salad Panini",
+      "readyInMinutes":25,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Chicken-Salad-Panini-376696.jpg"
+    },
+    { 
+      "id":399901,
+      "title":"Orange Chicken Salad",
+      "readyInMinutes":10,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Orange-Chicken-Salad-399901.jpg"
+    },
+    { 
+      "id":382513,
+      "title":"Chicken and Pineapple Salad",
+      "readyInMinutes":40,
+      "servings":5,
+      "image":"https://spoonacular.com/recipeImages/Chicken-and-Pineapple-Salad-382513.jpg"
+    },
+    { 
+      "id":386320,
+      "title":"Chicken Cacciatore Stoup",
+      "readyInMinutes":40,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chicken-cacciatore-stoup-386320.jpeg"
+    },
+    { 
+      "id":402243,
+      "title":"Spicy Chicken Linguine",
+      "readyInMinutes":30,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Spicy-Chicken-Linguine-402243.jpg"
+    },
+    { 
+      "id":411782,
+      "title":"Tangy Chicken Legs",
+      "readyInMinutes":40,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Tangy-Chicken-Legs-411782.jpg"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "results": [ 
+    { 
+      "id":592479,
+      "title":"Kale and Quinoa Salad with Black Beans",
+      "image":"https://spoonacular.com/recipeImages/592479-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":242.601,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":547775,
+      "title":"Creamy Avocado Pasta",
+      "image":"https://spoonacular.com/recipeImages/547775-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":484.434,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":818941,
+      "title":"Avocado Toast with Eggs, Spinach, and Tomatoes",
+      "image":"https://spoonacular.com/recipeImages/818941-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":277.24,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":495111,
+      "title":"Citrus Sesame Kale",
+      "image":"https://spoonacular.com/recipeImages/495111-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":72.0738,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":689502,
+      "title":"Melt In Your Mouth Kale Salad",
+      "image":"https://spoonacular.com/recipeImages/689502-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":441.927,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":837136,
+      "title":"Kale Pineapple Smoothie",
+      "image":"https://spoonacular.com/recipeImages/837136-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":461.892,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":582897,
+      "title":"Mexican Salad with Lime Dressing",
+      "image":"https://spoonacular.com/recipeImages/582897-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":149.327,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":777037,
+      "title":"Weekly Meal Plan #17",
+      "image":"https://spoonacular.com/recipeImages/777037-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":118.855,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":801710,
+      "title":"Matcha Green Tea and Pineapple Smoothie",
+      "image":"https://spoonacular.com/recipeImages/801710-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":283.738,
+          "unit":"cal"
+        }
+      ]
+    },
+    { 
+      "id":695486,
+      "title":"Green Smoothie",
+      "image":"https://spoonacular.com/recipeImages/695486-312x231.jpg",
+      "imageType":"jpg",
+      "nutrition":[ 
+        { 
+          "title":"Calories",
+          "amount":231.76,
+          "unit":"cal"
+        }
+      ]
+    }
+  ]
+}

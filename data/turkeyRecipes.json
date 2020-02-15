@@ -1,0 +1,305 @@
+{
+  "results": [ 
+    { 
+      "id":100034,
+      "title":"Turkey Brine",
+      "readyInMinutes":45,
+      "servings":54,
+      "image":"https://spoonacular.com/recipeImages/turkey-brine-2-100034.png"
+    },
+    { 
+      "id":173997,
+      "title":"Turkey Divan",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Divan-173997.jpg"
+    },
+    { 
+      "id":278207,
+      "title":"Turkey Tetrazzini",
+      "readyInMinutes":25,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/turkey-tetrazzini-278207.jpg"
+    },
+    { 
+      "id":293301,
+      "title":"Turkey Lasagna",
+      "readyInMinutes":80,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/turkey-lasagna-293301.jpeg"
+    },
+    { 
+      "id":395260,
+      "title":"Turkey Manicotti",
+      "readyInMinutes":95,
+      "servings":7,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Manicotti-395260.jpg"
+    },
+    { 
+      "id":560269,
+      "title":"Popcorn Turkey",
+      "readyInMinutes":28,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Popcorn-Turkey-560269.jpg"
+    },
+    { 
+      "id":578400,
+      "title":"Turkey Meatballs",
+      "readyInMinutes":35,
+      "servings":18,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Meatballs-578400.jpg"
+    },
+    { 
+      "id":619357,
+      "title":"Turkey Gravy",
+      "readyInMinutes":12,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Gravy-619357.jpg"
+    },
+    { 
+      "id":620207,
+      "title":"Turkey Brine",
+      "readyInMinutes":190,
+      "servings":12,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Brine-620207.jpg"
+    },
+    { 
+      "id":664030,
+      "title":"Turkey Enchiladas",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Enchiladas-664030.jpg"
+    },
+    { 
+      "id":674328,
+      "title":"Turkey Meatballs",
+      "readyInMinutes":30,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Meatballs-674328.png"
+    },
+    { 
+      "id":719851,
+      "title":"Turkey Congee",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/turkey-congee-719851.jpg"
+    },
+    { 
+      "id":774346,
+      "title":"Turkey Robinson",
+      "readyInMinutes":25,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/turkey-robinson-774346.jpeg"
+    },
+    { 
+      "id":1151844,
+      "title":"Turkey Meatballs",
+      "readyInMinutes":35,
+      "servings":20,
+      "image":"https://spoonacular.com/recipeImages/turkey-meatballs-1151844.jpg.jpg.jpg.jpg"
+    },
+    { 
+      "id":12271,
+      "title":"Turkey Giblet Stock",
+      "readyInMinutes":70,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/turkey-giblet-stock-2-12271.jpg"
+    },
+    { 
+      "id":71359,
+      "title":"Turkey Pot Pie",
+      "readyInMinutes":90,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/turkey_pot_pie-71359.jpg"
+    },
+    { 
+      "id":92650,
+      "title":"Turkey Chop Suey",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/turkey_chop_suey-92650.jpg"
+    },
+    { 
+      "id":100804,
+      "title":"Turkey Mushroom Supreme",
+      "readyInMinutes":20,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/turkey-mushroom-supreme-2-100804.png"
+    },
+    { 
+      "id":138066,
+      "title":"Richie's Turkey Meatloaf",
+      "readyInMinutes":70,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/richies-turkey-meatloaf-2-138066.jpg"
+    },
+    { 
+      "id":138280,
+      "title":"Alicante Turkey Soup",
+      "readyInMinutes":343,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/alicante-turkey-soup-138280.jpg"
+    },
+    { 
+      "id":171778,
+      "title":"Turkey Dinner Pizza",
+      "readyInMinutes":30,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/turkey-dinner-pizza-171778.jpg"
+    },
+    { 
+      "id":171623,
+      "title":"Chipotle Turkey Chili",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/chipotle-turkey-chili-171623.jpg"
+    },
+    { 
+      "id":181012,
+      "title":"Bacon-Turkey Bites",
+      "readyInMinutes":70,
+      "servings":24,
+      "image":"https://spoonacular.com/recipeImages/Bacon-Turkey-Bites-181012.jpg"
+    },
+    { 
+      "id":186407,
+      "title":"Turkey Cheddar Burgers",
+      "readyInMinutes":45,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Cheddar-Burgers-186407.jpg"
+    },
+    { 
+      "id":207527,
+      "title":"Turkey Broccoli Divan",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Broccoli-Divan-207527.jpg"
+    },
+    { 
+      "id":245447,
+      "title":"Hot Turkey Sandwich",
+      "readyInMinutes":10,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Hot-Turkey-Sandwich-245447.jpg"
+    },
+    { 
+      "id":416856,
+      "title":"Favorite Turkey Salad",
+      "readyInMinutes":20,
+      "servings":8,
+      "image":"https://spoonacular.com/recipeImages/Favorite-Turkey-Salad-416856.jpg"
+    },
+    { 
+      "id":267139,
+      "title":"Santa Fe Turkey Sandwich",
+      "readyInMinutes":10,
+      "servings":10,
+      "image":"https://spoonacular.com/recipeImages/santa-fe-turkey-sandwich-267139.jpg"
+    },
+    { 
+      "id":269358,
+      "title":"Downtown Turkey Wrap",
+      "readyInMinutes":15,
+      "servings":1,
+      "image":"https://spoonacular.com/recipeImages/downtown-turkey-wrap-269358.jpg"
+    },
+    { 
+      "id":270176,
+      "title":"Grilled Turkey Burgers",
+      "readyInMinutes":20,
+      "servings":20,
+      "image":"https://spoonacular.com/recipeImages/grilled-turkey-burgers-270176.jpg"
+    },
+    { 
+      "id":278576,
+      "title":"Turkey-Cheese Pockets",
+      "readyInMinutes":27,
+      "servings":27,
+      "image":"https://spoonacular.com/recipeImages/turkey-cheese-pockets-278576.jpg"
+    },
+    { 
+      "id":430068,
+      "title":"Terrific Turkey Club",
+      "readyInMinutes":10,
+      "servings":1,
+      "image":"https://spoonacular.com/recipeImages/Terrific-Turkey-Club-430068.jpg"
+    },
+    { 
+      "id":367478,
+      "title":"Cranberry Turkey Loaf",
+      "readyInMinutes":65,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Cranberry-Turkey-Loaf-367478.jpg"
+    },
+    { 
+      "id":370071,
+      "title":"Dilly Barbecued Turkey",
+      "readyInMinutes":70,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Dilly-Barbecued-Turkey-370071.jpg"
+    },
+    { 
+      "id":373338,
+      "title":"Spicy Turkey Legs",
+      "readyInMinutes":95,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Spicy-Turkey-Legs-373338.jpg"
+    },
+    { 
+      "id":375434,
+      "title":"Turkey and Spinach Lasagna",
+      "readyInMinutes":120,
+      "servings":12,
+      "image":"https://spoonacular.com/recipeImages/turkey-and-spinach-lasagna-375434.jpeg"
+    },
+    { 
+      "id":376006,
+      "title":"Turkey Tenderloin Sandwiches",
+      "readyInMinutes":20,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Turkey-Tenderloin-Sandwiches-376006.jpg"
+    },
+    { 
+      "id":378551,
+      "title":"Hot Turkey Bunwiches",
+      "readyInMinutes":30,
+      "servings":4,
+      "image":"https://spoonacular.com/recipeImages/Hot-Turkey-Bunwiches-378551.jpg"
+    },
+    { 
+      "id":379337,
+      "title":"Thanksgiving Stuffed Turkey",
+      "readyInMinutes":330,
+      "servings":18,
+      "image":"https://spoonacular.com/recipeImages/Thanksgiving-Stuffed-Turkey-379337.jpg"
+    },
+    { 
+      "id":403355,
+      "title":"Grilled Turkey Sandwiches",
+      "readyInMinutes":15,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Grilled-Turkey-Sandwiches-403355.jpg"
+    },
+    { 
+      "id":403644,
+      "title":"Spinach Turkey Roll",
+      "readyInMinutes":75,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Spinach-Turkey-Roll-403644.jpg"
+    },
+    { 
+      "id":407066,
+      "title":"Pineapple Turkey Salad",
+      "readyInMinutes":35,
+      "servings":2,
+      "image":"https://spoonacular.com/recipeImages/Pineapple-Turkey-Salad-407066.jpg"
+    },
+    { 
+      "id":424673,
+      "title":"Bistro Turkey Calzone",
+      "readyInMinutes":45,
+      "servings":6,
+      "image":"https://spoonacular.com/recipeImages/Bistro-Turkey-Calzone-424673.jpg"
+    }
+  ]
+}
