@@ -7,7 +7,7 @@ import readyInMinutesImg from '../../image/readyInMinutes.png'
 import './Category.css'
 
 export const Category = props => {
-  const { baseUri, category, openModal, title } = props
+  const { category, openModal, title } = props
 
   return (
     <div className='containerCategory'>
@@ -16,7 +16,7 @@ export const Category = props => {
         { category.length && category.map(item =>
             <div className='colCategory' key={item.id}>
               <div className='imgCategory'>
-                <Image src={baseUri + item.image} alt={item.image} type='category' />
+                <Image src={item.image} alt={item.image} type='category' />
               </div>
 
               <hr className='lineCategory'/>
@@ -60,7 +60,6 @@ export const Category = props => {
 }
 
 Category.propTypes = {
-  baseUri: PropTypes.string.isRequired,
   category: PropTypes.array.isRequired,
   openModal: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired

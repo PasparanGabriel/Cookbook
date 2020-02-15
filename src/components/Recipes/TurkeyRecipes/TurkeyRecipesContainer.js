@@ -3,7 +3,6 @@ import { turkeyRecipesAction } from '../../../store/actions/turkeyRecipesAction'
 import { TurkeyRecipes } from './TurkeyRecipes'
 
 const mapStateToProps = state => ({
-  baseUri: state.turkeyRecipes.baseUri,
   error: state.turkeyRecipes.error,
   loading: state.turkeyRecipes.loading,
   turkeyRecipes: state.turkeyRecipes.results

@@ -32,7 +32,7 @@ export class MaxCaloriesRecipes extends PureComponent {
     if (maxCaloriesRecipes && maxCaloriesRecipes.length) {
       return (
         <React.Fragment>
-          <Category baseUri='' category={maxCaloriesRecipes} openModal={this.openModal} title='Under 500 calories' />
+          <Category category={maxCaloriesRecipes} openModal={this.openModal} title='Under 500 calories' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </React.Fragment>
       )

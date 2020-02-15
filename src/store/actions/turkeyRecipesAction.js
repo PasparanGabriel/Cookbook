@@ -1,9 +1,7 @@
-import { turkeyRecipes } from '../../config/urls'
-
 export const turkeyRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_TURKEYRECIPES_LOADING' })
-    fetch(turkeyRecipes)
+    fetch('data/turkeyRecipes.json')
     .then(resp => resp.json())
     .then(resp => {
       if (resp.error) {

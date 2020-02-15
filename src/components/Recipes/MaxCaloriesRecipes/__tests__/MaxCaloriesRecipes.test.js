@@ -7,7 +7,6 @@ describe('MaxCaloriesRecipes', () => {
 
   describe('when the prop maxCaloriesRecipes is empty should do not render', () => {
     const props = {
-      baseUri: '',
       maxCaloriesRecipes: [],
       error: '',
       loading: false,
@@ -28,7 +27,6 @@ describe('MaxCaloriesRecipes', () => {
 
   describe('when the prop maxCaloriesRecipes is not empty should render', () => {
     const props = {
-      baseUri: '',
       maxCaloriesRecipes: [{
         123: 'test'
       }],

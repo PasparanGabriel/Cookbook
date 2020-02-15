@@ -7,7 +7,6 @@ describe('ChickenRecipes', () => {
 
   describe('when the prop chickenRecipes is empty should do not render', () => {
     const props = {
-      baseUri: '',
       chickenRecipes: [],
       error: '',
       loading: false,
@@ -28,7 +27,6 @@ describe('ChickenRecipes', () => {
 
   describe('when the prop chickenRecipes is not empty should render', () => {
     const props = {
-      baseUri: '',
       chickenRecipes: [{
         123: 'test'
       }],

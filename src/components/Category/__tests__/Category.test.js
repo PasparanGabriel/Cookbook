@@ -6,7 +6,6 @@ describe('Category', () => {
   describe('category is not empty', () => {
     let component;
     const props = {
-      baseUri: 'url',
       category: [
         {
           id: 123,
@@ -72,7 +71,6 @@ describe('Category', () => {
 
     describe('and servings is not empty & readyInMinutesImg is empty', () => {
       const props = {
-        baseUri: 'url',
         category: [
           {
             id: 123,
@@ -105,7 +103,6 @@ describe('Category', () => {
 
     describe('and servings is empty & readyInMinutesImg is not empty', () => {
       const props = {
-        baseUri: 'url',
         category: [
           {
             id: 123,

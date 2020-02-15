@@ -3,7 +3,6 @@ import { beefRecipesAction } from '../../../store/actions/beefRecipesAction'
 import { BeefRecipes } from './BeefRecipes'
 
 const mapStateToProps = state => ({
-  baseUri: state.beefRecipes.baseUri,
   beefRecipes: state.beefRecipes.results,
   error: state.beefRecipes.error,
   loading: state.beefRecipes.loading

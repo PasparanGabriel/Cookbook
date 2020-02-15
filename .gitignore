@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # settings
+/public/data
 /src/config/fbConfig.js
 /src/config/urls.js

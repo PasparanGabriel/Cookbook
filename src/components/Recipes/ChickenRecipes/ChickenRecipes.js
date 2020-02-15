@@ -19,7 +19,7 @@ export class ChickenRecipes extends PureComponent {
   }
 
   render() {
-    const { baseUri, chickenRecipes, error, loading } = this.props
+    const { chickenRecipes, error, loading } = this.props
 
     if (error) {
       return <Error err={error} />
@@ -32,7 +32,7 @@ export class ChickenRecipes extends PureComponent {
     if (chickenRecipes && chickenRecipes.length) {
       return (
         <React.Fragment>
-          <Category baseUri={baseUri} category={chickenRecipes} openModal={this.openModal} title='Chicken'/>
+          <Category category={chickenRecipes} openModal={this.openModal} title='Chicken'/>
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </React.Fragment>
       )
@@ -43,7 +43,6 @@ export class ChickenRecipes extends PureComponent {
 }
 
 ChickenRecipes.propTypes = {
-  baseUri: PropTypes.string.isRequired,
   chickenRecipes: PropTypes.array.isRequired,
   error: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired

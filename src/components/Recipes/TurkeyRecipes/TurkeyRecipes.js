@@ -19,7 +19,7 @@ export class TurkeyRecipes extends PureComponent {
   }
 
   render() {
-    const { baseUri, error, loading, turkeyRecipes } = this.props
+    const { error, loading, turkeyRecipes } = this.props
 
     if (error) {
       return <Error err={error} />
@@ -32,7 +32,7 @@ export class TurkeyRecipes extends PureComponent {
     if (turkeyRecipes && turkeyRecipes.length) {
       return (
         <React.Fragment>
-          <Category baseUri={baseUri} category={turkeyRecipes} openModal={this.openModal} title='Turkey' />
+          <Category category={turkeyRecipes} openModal={this.openModal} title='Turkey' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </React.Fragment>
       )
@@ -43,7 +43,6 @@ export class TurkeyRecipes extends PureComponent {
 }
 
 TurkeyRecipes.propTypes = {
-  baseUri: PropTypes.string.isRequired,
   error: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired,
   turkeyRecipes: PropTypes.array.isRequired

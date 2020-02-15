@@ -19,7 +19,7 @@ export class VegetarianRecipes extends PureComponent {
   }
 
   render() {
-    const { baseUri, error, loading, vegetarianRecipes } = this.props
+    const { error, loading, vegetarianRecipes } = this.props
 
     if (error) {
       return <Error err={error} />
@@ -32,7 +32,7 @@ export class VegetarianRecipes extends PureComponent {
     if (vegetarianRecipes && vegetarianRecipes.length) {
       return (
         <React.Fragment>
-          <Category baseUri={baseUri} category={vegetarianRecipes} openModal={this.openModal} title='Vegetarian' />
+          <Category category={vegetarianRecipes} openModal={this.openModal} title='Vegetarian' />
           <ViewDetails close={this.openModal} id={this.state.id} show={this.state.show} />
         </React.Fragment>
       )
@@ -43,7 +43,6 @@ export class VegetarianRecipes extends PureComponent {
 }
 
 VegetarianRecipes.propTypes = {
-  baseUri: PropTypes.string.isRequired,
   error: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired,
   vegetarianRecipes: PropTypes.array.isRequired

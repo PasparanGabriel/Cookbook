@@ -1,9 +1,7 @@
-import { maxCaloriesRecipes } from '../../config/urls'
-
 export const maxCaloriesRecipesAction = () => {
   return dispatch => {
     dispatch({ type: 'FETCH_MAXCALORIESRECIPES_LOADING' })
-    fetch(maxCaloriesRecipes)
+    fetch('data/maxCaloriesRecipes.json')
     .then(resp => resp.json())
     .then(resp => {
       if (resp.error) {

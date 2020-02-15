@@ -1,5 +1,4 @@
 const initialState = {
-  baseUri: '',
   error: '',
   loading: false,
   results: []
@@ -16,7 +15,6 @@ export const vegetarianRecipesReducer = (state = initialState, action) => {
     case 'FETCH_VEGETARIANRECIPES_SUCCESS':
       return {
         ...state,
-        baseUri: action.resp.baseUri,
         loading: false,
         results: action.resp.results
       }
